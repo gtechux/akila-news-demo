@@ -173,7 +173,6 @@
             text-align: center;
         }
 
-
         /* =========================================================
            VERSION 5: Narrow REM Layout + Original Color System
            Content/data remains unchanged. Container is narrower and custom sizes use rem.
@@ -199,7 +198,6 @@
                 padding-right: 1.25rem;
             }
         }
-
 
         /* Keep original dark top bar color */
         .akila-v3-original-colors .ak-topbar {
@@ -434,8 +432,6 @@
             }
         }
 
-
-
         /* Section layout refinements requested in v4 */
         .akila-v3-original-colors .ak-feature-card .img-placeholder {
             border-bottom: 0.0625rem dashed #cbd5e1;
@@ -560,7 +556,1645 @@
                 height: 14.375rem !important;
             }
         }
+
+
+        body.akila-v3-original-colors,
+        .akila-v3-original-colors main,
+        .akila-v3-original-colors section.ak-white-news-section,
+        .akila-v3-original-colors .ak-maru-section,
+        .akila-v3-original-colors .ak-saurashtra-section,
+        .akila-v3-original-colors .ak-film-section,
+        .akila-v3-original-colors .ak-sports-section {
+            background: #ffffff !important;
+        }
+
+        .akila-v3-original-colors .ak-topbar,
+        .akila-v3-original-colors .ak-topbar.bg-dark {
+            background-color: #212529 !important;
+            color: #ffffff !important;
+        }
+
+        .akila-v3-original-colors .ticker-wrap {
+            background-color: var(--akila-red) !important;
+            color: #ffffff !important;
+        }
+
+        .akila-v3-original-colors .ticker-label {
+            background-color: #000000 !important;
+            color: #ffffff !important;
+        }
+
+        .akila-v3-original-colors .ak-footer,
+        .akila-v3-original-colors .ak-footer.bg-dark {
+            background-color: #212529 !important;
+            color: #ffffff !important;
+        }
+
+        /* Remove news container/card background color, border, shadow */
+        .akila-v3-original-colors article,
+        .akila-v3-original-colors article.bg-white,
+        .akila-v3-original-colors .ak-main-center article,
+        .akila-v3-original-colors .rajkot-section article,
+        .akila-v3-original-colors .ak-film-section article,
+        .akila-v3-original-colors .ak-sports-section article,
+        .akila-v3-original-colors .ak-desh-section article,
+        .akila-v3-original-colors aside .bg-white.border:not(.ak-social-widget):not(.ak-opinion-widget),
+        .akila-v3-original-colors .col-lg-3>.bg-white.border:not(.ak-social-widget):not(.ak-opinion-widget),
+        .akila-v3-original-colors .col-lg-6>section.bg-white.border,
+        .akila-v3-original-colors .rajkot-section .bg-white.border.h-100 {
+            background: transparent !important;
+            border: 0 !important;
+            border-radius: 0 !important;
+            box-shadow: none !important;
+            overflow: visible;
+        }
+
+        .akila-v3-original-colors article:hover,
+        .akila-v3-original-colors .ak-feature-card:hover,
+        .akila-v3-original-colors section .row article:hover,
+        .akila-v3-original-colors section .d-flex.overflow-auto>.flex-shrink-0:hover {
+            transform: none !important;
+            box-shadow: none !important;
+        }
+
+        /* Keep ad boxes as they are */
+        .akila-v3-original-colors .ak-ad-box,
+        .akila-v3-original-colors aside .ak-ad-box,
+        .akila-v3-original-colors .content-box.my-5 .ak-ad-box {
+            background-color: #f8f9fa !important;
+            border: 2px dashed #adb5bd !important;
+            border-radius: 0.25rem !important;
+            color: #6c757d !important;
+            box-shadow: none !important;
+        }
+
+        /* Main middle layout separators */
+        @media (min-width: 992px) {
+            .akila-v3-original-colors main.content-box>.row.g-4>.ak-main-center {
+                border-left: 1px solid #e5e7eb;
+                border-right: 1px solid #e5e7eb;
+                padding-left: 1.5rem;
+                padding-right: 1.5rem;
+            }
+        }
+
+        .ak-news-separator {
+            border-top: 1px solid #d1d5db;
+            margin: 0 0 1.5rem;
+        }
+
+        @media (min-width: 768px) {
+            .ak-two-story-grid>.ak-story-col:first-child {
+                border-right: 1px solid #e5e7eb;
+                padding-right: 1rem;
+            }
+
+            .ak-two-story-grid>.ak-story-col:last-child {
+                padding-left: 1rem;
+            }
+        }
+
+        .ak-more-news-list>article {
+            padding: 0 0 1.2rem !important;
+            margin: 0 !important;
+            border-bottom: 1px solid #e5e7eb !important;
+        }
+
+        .ak-more-news-list>article+article {
+            padding-top: 1.2rem !important;
+        }
+
+        .ak-more-news-list>article:last-child {
+            border-bottom: 0 !important;
+        }
+
+        /* Opinion poll: original layout, only answers gray */
+        .akila-v3-original-colors .ak-opinion-widget {
+            background: #ffffff !important;
+            border: 0 !important;
+            box-shadow: none !important;
+            border-radius: 0 !important;
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+        }
+
+        .akila-v3-original-colors .ak-opinion-options label {
+            background: #f5f5f5 !important;
+            border-radius: 4px;
+            padding: 0.72rem 0.8rem;
+            cursor: pointer;
+            color: #111827;
+        }
+
+        .akila-v3-original-colors .ak-opinion-options .form-check-input {
+            width: 1.15rem;
+            height: 1.15rem;
+            border-color: #111111;
+        }
+
+        /* Keep social media card exactly visible */
+        .akila-v3-original-colors .ak-social-widget {
+            background-color: #ffffff !important;
+            border: 0px solid #dee2e6 !important;
+            border-radius: 0.25rem !important;
+            box-shadow: none !important;
+            padding: 1rem !important;
+        }
+
+        .akila-v3-original-colors .ak-social-widget .border-bottom {
+            border-bottom: 2px solid #0d6efd !important;
+        }
+
+        /* Keep sticky note as it is */
+        .akila-v3-original-colors .sticky-note {
+            background: #fef3c7 !important;
+            border-radius: 0.25rem !important;
+            box-shadow: 0.0625rem 0.125rem 0.375rem rgba(0, 0, 0, 0.08) !important;
+        }
+
+        .akila-v3-original-colors .sticky-note::before,
+        .akila-v3-original-colors .sticky-note::after {
+            display: block !important;
+        }
+
+        /* Headline grid separators like reference */
+        .ak-headline-grid>[class*="col-"] {
+            border-color: #d1d5db !important;
+        }
+
+        @media (min-width: 992px) {
+
+            .ak-headline-grid>[class*="col-"]:nth-child(3n+1),
+            .ak-headline-grid>[class*="col-"]:nth-child(3n+2) {
+                border-right: 1px solid #d1d5db !important;
+            }
+
+            .ak-headline-grid>[class*="col-"]:nth-child(n+4) {
+                border-top: 0 !important;
+            }
+        }
+
+        /* Rajkot right list separator */
+        .rajkot-section {
+            background: #ffffff !important;
+        }
+
+        @media (min-width: 992px) {
+            .rajkot-section .row.g-4>.col-lg-6:last-child {
+                border-left: 1px solid #e5e7eb;
+                padding-left: 1.5rem;
+            }
+        }
+
+        .rajkot-section .px-3.py-3.border-bottom,
+        .rajkot-section .p-3.border-bottom {
+            border-bottom: 1px solid #e5e7eb !important;
+        }
+
+        /* Film + Sports separators like shared reference */
+        @media (min-width: 992px) {
+
+            .ak-film-section .row.g-4>[class*="col-"]:nth-child(3n+2),
+            .ak-sports-section .row.g-4>[class*="col-"]:nth-child(3n+2) {
+                border-left: 1px solid #e5e7eb;
+                border-right: 1px solid #e5e7eb;
+            }
+        }
+
+        .ak-film-section .row.g-4>[class*="col-"]:nth-child(-n+3),
+        .ak-sports-section .row.g-4>[class*="col-"]:nth-child(-n+3) {
+            border-bottom: 1px solid #e5e7eb;
+            padding-bottom: 1.5rem;
+        }
+
+        .ak-film-section .row.g-4,
+        .ak-sports-section .row.g-4 {
+            row-gap: 1.5rem !important;
+        }
+
+        /* Desh Videsh small items as clean separators */
+        .ak-desh-section .ak-horizontal-news {
+            background: transparent !important;
+            border: 0 !important;
+            border-top: 1px solid #e5e7eb !important;
+            border-radius: 0 !important;
+            box-shadow: none !important;
+            padding: 1rem 0 !important;
+        }
+
+        .ak-desh-section .ak-desh-feature {
+            border: 0 !important;
+            border-bottom: 1px solid #e5e7eb !important;
+            border-radius: 0 !important;
+            box-shadow: none !important;
+            padding-bottom: 1.5rem;
+        }
+
+        /* મુખ્ય સમાચાર: text block left/right padding removed */
+        .akila-v3-original-colors .ak-main-center>article:first-of-type .p-4 {
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+            padding-top: 1rem !important;
+            padding-bottom: 1.25rem !important;
+        }
+
+        /* Main list news: clear separator between each news item */
+        .akila-v3-original-colors .ak-more-news-list {
+            gap: 0 !important;
+        }
+
+        .akila-v3-original-colors .ak-more-news-list>article {
+            padding: 0 0 1.05rem !important;
+            margin: 0 0 1.05rem !important;
+            border-bottom: 1px solid #d9dee5 !important;
+            gap: 1rem !important;
+            align-items: flex-start;
+        }
+
+        .akila-v3-original-colors .ak-more-news-list>article+article {
+            padding-top: 0 !important;
+        }
+
+        .akila-v3-original-colors .ak-more-news-list>article:last-child {
+            border-bottom: 0 !important;
+            margin-bottom: 0 !important;
+            padding-bottom: 0 !important;
+        }
+
+        .akila-v3-original-colors .ak-more-news-list h4 {
+            line-height: 1.45;
+        }
+
+        .akila-v3-original-colors .ak-more-news-list p {
+            margin-top: 0.35rem;
+            margin-bottom: 0.35rem;
+            line-height: 1.45;
+            color: #4b5563;
+        }
+
+        /* સૌરાષ્ટ્ર કચ્છ: headline grid separator between BRTS and next news rows */
+        .akila-v3-original-colors .ak-saurashtra-section .ak-headline-grid>[class*="col-"] {
+            border-bottom: 1px solid #e1e5eb !important;
+        }
+
+        .akila-v3-original-colors .ak-saurashtra-section .ak-headline-grid>[class*="col-"]:last-child {
+            border-bottom: 0 !important;
+        }
+
+        @media (min-width: 992px) {
+            .akila-v3-original-colors .ak-saurashtra-section .ak-headline-grid>[class*="col-"] {
+                padding-top: 1rem !important;
+                padding-bottom: 1rem !important;
+            }
+        }
+
+        /* દેશ વિદેશ: left side text padding removed */
+        .akila-v3-original-colors .ak-desh-section .ak-desh-feature>.p-4 {
+            padding-left: 0 !important;
+            padding-top: 0.5rem !important;
+            padding-bottom: 1.5rem !important;
+        }
+
+        .akila-v3-original-colors .ak-desh-section .ak-desh-feature {
+            column-gap: 1.5rem;
+        }
+
+        @media (max-width: 991.98px) {
+            .akila-v3-original-colors .ak-desh-section .ak-desh-feature {
+                row-gap: 1rem;
+            }
+
+            .akila-v3-original-colors .ak-desh-section .ak-desh-feature>.p-4 {
+                padding-right: 0 !important;
+            }
+        }
+
+        /* Main content section bottom separator */
+        .akila-v3-original-colors .ak-main-bottom-separator {
+            border-top: 1px solid #d1d5db;
+            margin-top: 1rem;
+            margin-bottom: 0;
+        }
+
+        /* ફિલ્મ જગત: row separator should not touch news card/content */
+        .akila-v3-original-colors .ak-film-section .row.g-4>[class*="col-"]:nth-child(-n+3) {
+            border-bottom: 0 !important;
+            padding-bottom: 2rem !important;
+            margin-bottom: 0.25rem;
+            position: relative;
+        }
+
+        .akila-v3-original-colors .ak-film-section .row.g-4>[class*="col-"]:nth-child(-n+3)::after {
+            content: "";
+            position: absolute;
+            left: calc(var(--bs-gutter-x) * .5);
+            right: calc(var(--bs-gutter-x) * .5);
+            bottom: 0;
+            height: 1px;
+            background: #e1e5eb;
+        }
+
+        @media (max-width: 991.98px) {
+            .akila-v3-original-colors .ak-film-section .row.g-4>[class*="col-"]:nth-child(-n+3) {
+                padding-bottom: 1.25rem !important;
+            }
+
+            .akila-v3-original-colors .ak-film-section .row.g-4>[class*="col-"]:nth-child(-n+3)::after {
+                left: calc(var(--bs-gutter-x) * .5);
+                right: calc(var(--bs-gutter-x) * .5);
+            }
+        }
+
+        /* =========================================================
+           REQUESTED UI POLISH - ROUND 2
+        ========================================================= */
+
+        /* મુખ્ય સમાચાર center column vertical borders removed */
+        @media (min-width: 992px) {
+            .akila-v3-original-colors main.content-box>.row.g-4>.ak-main-center {
+                border-left: 0 !important;
+                border-right: 0 !important;
+            }
+        }
+
+        /* મુખ્ય સમાચાર: two news below hero - remove side padding/border feel */
+        .akila-v3-original-colors .ak-two-story-grid>.ak-story-col:first-child,
+        .akila-v3-original-colors .ak-two-story-grid>.ak-story-col:last-child {
+            border-right: 0 !important;
+            padding-left: calc(var(--bs-gutter-x) * .5) !important;
+            padding-right: calc(var(--bs-gutter-x) * .5) !important;
+        }
+
+        .akila-v3-original-colors .ak-two-story-grid .ak-story-col article>.p-3 {
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+        }
+
+        /* Main navigation background light gray, text colors normal */
+        .akila-v3-original-colors .sticky-nav {
+            background: #f3f4f6 !important;
+            border-bottom: 1px solid #e5e7eb !important;
+        }
+
+        .akila-v3-original-colors .sticky-nav .content-box {
+            background: #f3f4f6 !important;
+        }
+
+        .akila-v3-original-colors .sticky-nav a {
+            color: #6c757d !important;
+        }
+
+        .akila-v3-original-colors .sticky-nav .text-danger {
+            color: #dc3545 !important;
+            border-color: #dc3545 !important;
+        }
+
+        .akila-v3-original-colors .sticky-nav .text-primary {
+            color: #0d6efd !important;
+        }
+
+        .akila-v3-original-colors .sticky-nav a:hover {
+            color: #212529 !important;
+            background-color: #ffffff !important;
+        }
+
+        /* Video widget: visible separator below main video */
+        .akila-v3-original-colors .ak-video-widget {
+            background: #ffffff !important;
+            border: 0 !important;
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+        }
+
+        .akila-v3-original-colors .ak-video-widget>article:first-of-type {
+            border-bottom: 1px solid #e1e5eb !important;
+            padding-bottom: 1rem !important;
+            margin-bottom: 1rem !important;
+        }
+
+        .akila-v3-original-colors .ak-video-widget img {
+            width: 100%;
+        }
+
+        /* તાજા સમાચાર એલર્ટ્સ: light gray box with border */
+        .akila-v3-original-colors .ak-newsletter-widget {
+            background: #f8f9fa !important;
+            border: 1px solid #e1e5eb !important;
+            border-radius: 0.35rem !important;
+            padding: 1.1rem !important;
+            box-shadow: none !important;
+        }
+
+        .akila-v3-original-colors .ak-newsletter-widget .form-control {
+            border-color: #d8dde5;
+            background: #ffffff;
+        }
+
+        /* મારુ ગુજરાત: separators between sub news */
+        .akila-v3-original-colors .ak-maru-section .ak-headline-grid>[class*="col-"] {
+            border-bottom: 1px solid #e1e5eb !important;
+            padding-top: 1rem !important;
+            padding-bottom: 1rem !important;
+        }
+
+        .akila-v3-original-colors .ak-maru-section .ak-headline-grid>[class*="col-"]:last-child {
+            border-bottom: 0 !important;
+        }
+
+        @media (min-width: 992px) {
+            .akila-v3-original-colors .ak-maru-section .ak-headline-grid>[class*="col-"]:nth-child(n+4) {
+                border-top: 0 !important;
+            }
+        }
+
+        /* દેશ વિદેશ: two main news row + clean separator */
+        .akila-v3-original-colors .ak-desh-main-row {
+            margin-bottom: 0 !important;
+        }
+
+        .akila-v3-original-colors .ak-desh-main-card {
+            background: transparent !important;
+            border: 0 !important;
+            border-radius: 0 !important;
+            box-shadow: none !important;
+            overflow: visible !important;
+        }
+
+        .akila-v3-original-colors .ak-desh-main-img {
+            height: 13.75rem;
+            object-fit: cover;
+            display: block;
+            margin-bottom: 1rem;
+        }
+
+        .akila-v3-original-colors .ak-desh-main-content {
+            padding: 0 !important;
+        }
+
+        .akila-v3-original-colors .ak-desh-main-separator {
+            border-top: 1px solid #d9dee5;
+            margin: 1.5rem 0 0;
+        }
+
+        @media (min-width: 992px) {
+            .akila-v3-original-colors .ak-desh-main-row>[class*="col-"]:first-child {
+                border-right: 1px solid #e1e5eb;
+                padding-right: 1.5rem;
+            }
+
+            .akila-v3-original-colors .ak-desh-main-row>[class*="col-"]:last-child {
+                padding-left: 1.5rem;
+            }
+        }
+
+        @media (max-width: 991.98px) {
+            .akila-v3-original-colors .ak-desh-main-row>[class*="col-"]:not(:last-child) {
+                border-bottom: 1px solid #e1e5eb;
+                padding-bottom: 1.5rem;
+            }
+
+            .akila-v3-original-colors .ak-desh-main-img {
+                height: 12.5rem;
+            }
+        }
+
+        /* =========================================================
+           COMPACT SPACING PASS - full page spacing reduced
+        ========================================================= */
+
+        body.akila-v3-original-colors .content-box {
+            padding-left: 0.85rem !important;
+            padding-right: 0.85rem !important;
+        }
+
+        body.akila-v3-original-colors header .content-box.py-4 {
+            padding-top: 1.15rem !important;
+            padding-bottom: 1.15rem !important;
+        }
+
+        body.akila-v3-original-colors header h1 {
+            font-size: 2.15rem !important;
+        }
+
+        body.akila-v3-original-colors .sticky-nav ul {
+            padding-top: 0.55rem !important;
+            padding-bottom: 0.55rem !important;
+            gap: 0.75rem !important;
+        }
+
+        body.akila-v3-original-colors .sticky-nav a {
+            padding: 0.35rem 0.6rem !important;
+            color: #343a40 !important;
+        }
+
+        body.akila-v3-original-colors .sticky-nav .text-danger {
+            color: #dc3545 !important;
+            border-color: #dc3545 !important;
+        }
+
+        body.akila-v3-original-colors .sticky-nav .text-primary {
+            color: #0d6efd !important;
+        }
+
+        body.akila-v3-original-colors main.content-box.py-4 {
+            padding-top: 1.25rem !important;
+            padding-bottom: 1.25rem !important;
+        }
+
+        body.akila-v3-original-colors section.py-5,
+        body.akila-v3-original-colors section.bg-white.py-5,
+        body.akila-v3-original-colors section.border-top.py-5 {
+            padding-top: 2rem !important;
+            /* padding-bottom: 2rem !important; */
+        }
+
+        body.akila-v3-original-colors footer.pt-5 {
+            padding-top: 2rem !important;
+        }
+
+        body.akila-v3-original-colors footer.pb-4 {
+            padding-bottom: 1.25rem !important;
+        }
+
+        body.akila-v3-original-colors .my-5 {
+            margin-top: 1.4rem !important;
+            margin-bottom: 1.4rem !important;
+        }
+
+        body.akila-v3-original-colors .mt-4,
+        body.akila-v3-original-colors .mt-3 {
+            margin-top: 0.9rem !important;
+        }
+
+        body.akila-v3-original-colors .mb-4 {
+            margin-bottom: 1rem !important;
+        }
+
+        body.akila-v3-original-colors .mb-3 {
+            margin-bottom: 0.65rem !important;
+        }
+
+        body.akila-v3-original-colors .mb-2 {
+            margin-bottom: 0.4rem !important;
+        }
+
+        body.akila-v3-original-colors .pt-4 {
+            padding-top: 0.9rem !important;
+        }
+
+        body.akila-v3-original-colors .pb-4 {
+            padding-bottom: 0.9rem !important;
+        }
+
+        body.akila-v3-original-colors .p-4 {
+            padding: 1rem !important;
+        }
+
+        body.akila-v3-original-colors .p-3 {
+            padding: 0.75rem !important;
+        }
+
+        body.akila-v3-original-colors .px-3 {
+            padding-left: 0.75rem !important;
+            padding-right: 0.75rem !important;
+        }
+
+        body.akila-v3-original-colors .py-3 {
+            padding-top: 0.65rem !important;
+            padding-bottom: 0.65rem !important;
+        }
+
+        body.akila-v3-original-colors .row.g-4 {
+            --bs-gutter-x: 1rem;
+            --bs-gutter-y: 1rem;
+        }
+
+        body.akila-v3-original-colors .row.g-3 {
+            --bs-gutter-x: 0.75rem;
+            --bs-gutter-y: 0.75rem;
+        }
+
+        body.akila-v3-original-colors .gap-4 {
+            gap: 1rem !important;
+        }
+
+        body.akila-v3-original-colors .gap-3 {
+            gap: 0.7rem !important;
+        }
+
+        body.akila-v3-original-colors .gap-2 {
+            gap: 0.4rem !important;
+        }
+
+        body.akila-v3-original-colors .ak-news-separator {
+            margin-bottom: 1rem !important;
+        }
+
+        body.akila-v3-original-colors .ak-main-bottom-separator,
+        body.akila-v3-original-colors .ak-desh-main-separator {
+            margin-top: 1rem !important;
+        }
+
+        body.akila-v3-original-colors .ak-more-news-list>article {
+            padding-bottom: 0.75rem !important;
+            margin-bottom: 0.75rem !important;
+            gap: 0.75rem !important;
+        }
+
+        body.akila-v3-original-colors .ak-more-news-list img {
+            width: 5.25rem !important;
+            height: 5.25rem !important;
+        }
+
+        body.akila-v3-original-colors .ak-maru-section .ak-headline-grid>[class*="col-"],
+        body.akila-v3-original-colors .ak-saurashtra-section .ak-headline-grid>[class*="col-"],
+        body.akila-v3-original-colors .ak-headline-grid>[class*="col-"] {
+            padding: 0.7rem 0.85rem !important;
+        }
+
+        body.akila-v3-original-colors .rajkot-section .px-3.py-3.border-bottom,
+        body.akila-v3-original-colors .rajkot-section .p-3.border-bottom {
+            padding-top: 0.65rem !important;
+            padding-bottom: 0.65rem !important;
+        }
+
+        body.akila-v3-original-colors .ak-desh-section .ak-desh-main-img {
+            margin-bottom: 0.65rem !important;
+        }
+
+        body.akila-v3-original-colors .ak-desh-section .ak-horizontal-news {
+            padding-top: 0.7rem !important;
+            padding-bottom: 0.7rem !important;
+            gap: 0.65rem !important;
+        }
+
+        body.akila-v3-original-colors .ak-desh-small-grid {
+            gap: 0.75rem !important;
+        }
+
+        body.akila-v3-original-colors .ak-film-section .row.g-4>[class*="col-"]:nth-child(-n+3),
+        body.akila-v3-original-colors .ak-sports-section .row.g-4>[class*="col-"]:nth-child(-n+3) {
+            padding-bottom: 1.15rem !important;
+        }
+
+        body.akila-v3-original-colors .ak-film-section .row.g-4,
+        body.akila-v3-original-colors .ak-sports-section .row.g-4 {
+            row-gap: 1rem !important;
+        }
+
+        body.akila-v3-original-colors .ak-newsletter-widget {
+            padding: 0.85rem !important;
+        }
+
+        body.akila-v3-original-colors aside .bg-white.border,
+        body.akila-v3-original-colors .col-lg-3>.bg-white.border,
+        body.akila-v3-original-colors .ak-social-widget,
+        body.akila-v3-original-colors .sticky-note {
+            margin-bottom: 1rem !important;
+        }
+
+        @media (min-width: 992px) {
+
+            body.akila-v3-original-colors .rajkot-section .row.g-4>.col-lg-6:last-child,
+            body.akila-v3-original-colors .ak-desh-main-row>[class*="col-"]:first-child,
+            body.akila-v3-original-colors .ak-desh-main-row>[class*="col-"]:last-child {
+                padding-left: 1rem !important;
+                padding-right: 1rem !important;
+            }
+        }
+
+        @media (max-width: 575.98px) {
+            body.akila-v3-original-colors .content-box {
+                padding-left: 0.7rem !important;
+                padding-right: 0.7rem !important;
+            }
+
+            body.akila-v3-original-colors section.py-5,
+            body.akila-v3-original-colors section.bg-white.py-5,
+            body.akila-v3-original-colors section.border-top.py-5 {
+                padding-top: 1.5rem !important;
+                padding-bottom: 1.5rem !important;
+            }
+        }
+
+        /* First main section: reduce spacing between the 3 columns */
+        @media (min-width: 992px) {
+            body.akila-v3-original-colors .ak-main-layout {
+                --bs-gutter-x: 0.75rem !important;
+            }
+
+            body.akila-v3-original-colors .ak-main-layout>.ak-main-center {
+                padding-left: 0.75rem !important;
+                padding-right: 0.75rem !important;
+            }
+        }
+
+        .ak-side-news-card {
+            padding: 0 !important;
+            margin: 0 !important;
+            gap: 12px;
+            align-items: flex-start;
+            border: 1px solid #e5e7eb;
+            background: #ffffff;
+        }
+
+        .ak-side-news-img {
+            width: 6rem;
+            height: 6rem;
+            object-fit: cover;
+            display: block;
+        }
+
+        .ak-side-news-content {
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+
+        .ak-side-news-title {
+            font-size: 1rem;
+            margin-top: 0 !important;
+            margin-bottom: 4px !important;
+            line-height: 1.45;
+        }
+
+        .ak-side-news-desc {
+            font-size: 14px;
+            margin-top: 0 !important;
+            margin-bottom: 4px !important;
+            line-height: 1.45;
+        }
+
+        .ak-side-news-time {
+            font-size: 0.8rem;
+        }
+
+        .ak-social-widget {
+            border: 0 !important;
+            box-shadow: none !important;
+            outline: 0 !important;
+        }
+
+        .social-media-banner .img-placeholder {
+            width: 100%;
+            height: auto;
+            border: none;
+            border-radius: 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #64748b;
+            overflow: hidden;
+        }
+
+        .ak-newsletter-widget {
+            margin: 0 !important;
+            padding: 0 !important;
+            border: 0 !important;
+            box-shadow: none !important;
+            outline: 0 !important;
+            background: transparent !important;
+        }
+
+        .ak-newsletter-box {
+            margin: 0 !important;
+            padding: 16px !important;
+            border: 0px solid #dee2e6;
+            border-radius: 6px;
+        }
+
+        .ak-newsletter-content {
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+
+        .ak-maru-title-block {
+            margin-bottom: 24px;
+        }
+
+        .ak-maru-title-row {
+            padding-bottom: 8px;
+        }
+
+        .ak-maru-double-dot-line {
+            width: 100%;
+            height: 6px;
+            border-top: 1px dotted #777;
+            border-bottom: 1px dotted #777;
+        }
+
+        .ak-maru-short-news-grid {
+            border-top: 2px dotted #d6d6d6;
+            padding-top: 12px;
+            margin-top: 26px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 32px;
+        }
+
+        .ak-maru-short-news-col {
+            min-width: 0;
+        }
+
+        .ak-maru-short-news-link {
+            position: relative;
+            display: block;
+            padding: 8px 0 8px 18px;
+            border-bottom: 1px dotted #cfcfcf;
+            color: #333333;
+            text-decoration: none;
+            font-size: 15px;
+            line-height: 1.45;
+            font-weight: 700;
+        }
+
+        .ak-maru-short-news-link::before {
+            content: "◦";
+            position: absolute;
+            left: 0;
+            top: 8px;
+            color: #8b8b8b;
+            font-size: 16px;
+            line-height: 1;
+        }
+
+        .ak-maru-short-news-link:hover {
+            color: #0d6efd;
+        }
+
+        @media (max-width: 991.98px) {
+            .ak-maru-short-news-grid {
+                grid-template-columns: repeat(2, 1fr);
+                column-gap: 24px;
+            }
+        }
+
+        @media (max-width: 575.98px) {
+            .ak-maru-short-news-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .ak-maru-short-news-link {
+                font-size: 14px;
+            }
+        }
+
+        .rajkot-section {
+            background-color: #fff7ed !important;
+            border: 0 !important;
+        }
+
+        .ak-rajkot-title-block {
+            margin-bottom: 24px;
+        }
+
+        .ak-rajkot-title-row {
+            padding-bottom: 8px;
+        }
+
+        .ak-rajkot-title {
+            font-size: 1.5rem;
+            color: #ea580c;
+        }
+
+        .ak-rajkot-double-dot-line {
+            width: 100%;
+            height: 6px;
+            border-top: 1px dotted #777;
+            border-bottom: 1px dotted #777;
+        }
+
+        .ak-rajkot-main-news {
+            border: 0 !important;
+            background: #ffffff;
+            margin-bottom: 0 !important;
+        }
+
+        .ak-rajkot-main-news img {
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .ak-rajkot-main-news-content {
+            padding: 12px 0 0 0 !important;
+        }
+
+        .ak-rajkot-main-dot-line {
+            width: 100%;
+            border-top: 2px dotted #d6d6d6;
+            margin: 18px 0;
+        }
+
+        .ak-rajkot-small-card {
+            border: 0 !important;
+            background: #ffffff;
+        }
+
+        .ak-rajkot-small-card img {
+            height: 130px;
+            object-fit: cover;
+        }
+
+        .ak-rajkot-small-card-content {
+            padding: 8px 0 0 0 !important;
+        }
+
+        .ak-rajkot-short-news-box {
+            background: #ffffff;
+            border: 0 !important;
+            height: 100%;
+        }
+
+        .ak-rajkot-short-news-list {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .ak-rajkot-short-news-link {
+            position: relative;
+            display: block;
+            padding: 10px 0 10px 18px;
+            border-bottom: 1px dotted #cfcfcf;
+            color: #333333;
+            text-decoration: none;
+            font-size: 15px;
+            line-height: 1.45;
+            font-weight: 700;
+        }
+
+        .ak-rajkot-short-news-link::before {
+            content: "◦";
+            position: absolute;
+            left: 0;
+            top: 10px;
+            color: #8b8b8b;
+            font-size: 16px;
+            line-height: 1;
+        }
+
+        .ak-rajkot-short-news-link:hover {
+            color: #ea580c;
+        }
+
+        .ak-rajkot-ad-wrap {
+            padding: 14px 0;
+            border-bottom: 1px dotted #cfcfcf;
+        }
+
+        .ak-rajkot-ad-box {
+            height: 120px;
+            background: #f8f9fa;
+            border: 1px solid #e5e7eb;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        @media (max-width: 991.98px) {
+            .ak-rajkot-short-news-box {
+                margin-top: 20px;
+            }
+        }
+
+        .ak-saurashtra-section {
+            border-top: 0 !important;
+            border-bottom: 0 !important;
+            background: #ffffff !important;
+        }
+
+        .ak-saurashtra-title-block {
+            margin-bottom: 24px;
+        }
+
+        .ak-saurashtra-section-header {
+            border-bottom: 0 !important;
+            padding-bottom: 8px;
+            margin-bottom: 0;
+        }
+
+        .ak-saurashtra-double-dot-line {
+            width: 100%;
+            height: 6px;
+            border-top: 1px dotted #777;
+            border-bottom: 1px dotted #777;
+        }
+
+        .ak-saurashtra-main-img {
+            width: 100%;
+            height: 190px;
+            object-fit: cover;
+            display: block;
+            margin-bottom: 12px;
+        }
+
+        .ak-saurashtra-headline-grid {
+            border-top: 2px dotted #d6d6d6;
+            padding-top: 12px;
+            margin-top: 26px;
+            display: flex;
+            gap: 32px;
+        }
+
+        .ak-saurashtra-headline-col {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .ak-saurashtra-headline-link {
+            position: relative;
+            display: block;
+            padding: 8px 0 8px 18px;
+            border-bottom: 1px dotted #cfcfcf;
+            color: #333333;
+            text-decoration: none;
+            font-size: 15px;
+            line-height: 1.45;
+            font-weight: 700;
+        }
+
+        .ak-saurashtra-headline-link::before {
+            content: "◦";
+            position: absolute;
+            left: 0;
+            top: 8px;
+            color: #8b8b8b;
+            font-size: 16px;
+            line-height: 1;
+        }
+
+        .ak-saurashtra-headline-link:hover {
+            color: #ea580c;
+        }
+
+        @media (max-width: 991.98px) {
+            .ak-saurashtra-headline-grid {
+                flex-wrap: wrap;
+                gap: 0 24px;
+            }
+
+            .ak-saurashtra-headline-col {
+                flex: 0 0 calc(50% - 12px);
+            }
+        }
+
+        @media (max-width: 575.98px) {
+            .ak-saurashtra-headline-grid {
+                display: block;
+            }
+
+            .ak-saurashtra-headline-col {
+                width: 100%;
+            }
+
+            .ak-saurashtra-headline-link {
+                font-size: 14px;
+            }
+        }
+
+        .rajkot-section .row.g-4>.col-lg-6,
+        .rajkot-section .row.g-4>.col-lg-6:first-child,
+        .rajkot-section .row.g-4>.col-lg-6:last-child {
+            border-left: 0 !important;
+            border-right: 0 !important;
+        }
+
+        .rajkot-section .row.g-4>.col-lg-6::before,
+        .rajkot-section .row.g-4>.col-lg-6::after {
+            content: none !important;
+            display: none !important;
+        }
+
+        .rajkot-section .ak-rajkot-main-news,
+        .rajkot-section .ak-rajkot-small-card,
+        .rajkot-section .ak-rajkot-short-news-box {
+            border-left: 0 !important;
+            border-right: 0 !important;
+            box-shadow: none !important;
+        }
+
+        .ak-desh-section {
+            background-color: #eef2ff !important;
+            border: 0 !important;
+        }
+
+        .ak-desh-section .content-box {
+            max-width: 1180px;
+            margin: 0 auto;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .ak-section-title-block {
+            margin-bottom: 24px;
+        }
+
+        .ak-section-title-row {
+            padding-bottom: 8px;
+        }
+
+        .ak-double-dot-line {
+            width: 100%;
+            height: 6px;
+            border-top: 1px dotted #777;
+            border-bottom: 1px dotted #777;
+        }
+
+        .ak-desh-main-row,
+        .ak-desh-main-row>div,
+        .ak-desh-main-card {
+            border: 0 !important;
+            border-bottom: 0 !important;
+            box-shadow: none !important;
+            outline: 0 !important;
+        }
+
+        .ak-desh-main-row::before,
+        .ak-desh-main-row::after,
+        .ak-desh-main-card::before,
+        .ak-desh-main-card::after {
+            content: none !important;
+            display: none !important;
+        }
+
+        .ak-desh-main-card {
+            background: transparent !important;
+            overflow: hidden;
+        }
+
+        .ak-desh-main-img {
+            width: 100%;
+            height: 210px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .ak-desh-main-content {
+            padding: 12px 0 0 0 !important;
+            margin: 0 !important;
+        }
+
+        .ak-desh-main-separator {
+            display: block !important;
+            width: 100% !important;
+            height: 0 !important;
+            border: 0 !important;
+            border-top: 2px dotted #d6d6d6 !important;
+            margin: 24px 0 !important;
+            background: none !important;
+            box-shadow: none !important;
+        }
+
+        .ak-desh-small-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+        }
+
+        .ak-horizontal-news {
+            display: flex;
+            gap: 12px;
+            border: 0 !important;
+            box-shadow: none !important;
+            outline: 0 !important;
+            background: transparent !important;
+        }
+
+        .ak-horizontal-news .img-placeholder {
+            width: 110px;
+            height: 85px;
+            flex: 0 0 110px;
+            overflow: hidden;
+        }
+
+        .ak-horizontal-news img {
+            object-fit: cover;
+            display: block;
+        }
+
+        @media (max-width: 991.98px) {
+            .ak-desh-small-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .ak-section-title-block {
+            margin-bottom: 35px;
+        }
+
+        .ak-section-title-row {
+            padding-bottom: 8px;
+        }
+
+        .ak-double-dot-line {
+            width: 100%;
+            height: 6px;
+            border-top: 1px dotted #777;
+            border-bottom: 1px dotted #777;
+        }
+
+        .ak-film-section {
+            border: 0 !important;
+            box-shadow: none !important;
+            outline: 0 !important;
+            background: #ffffff !important;
+        }
+
+        .ak-film-title {
+            font-size: 1.5rem;
+            color: #db2777;
+        }
+
+        .ak-film-grid {
+            border: 0 !important;
+            box-shadow: none !important;
+            outline: 0 !important;
+            --bs-gutter-y: 36px;
+        }
+
+        .ak-film-grid,
+        .ak-film-grid>div,
+        .ak-film-item,
+        .ak-film-card,
+        .ak-film-card>div,
+        .ak-film-card img {
+            border: 0 !important;
+            border-top: 0 !important;
+            border-right: 0 !important;
+            border-bottom: 0 !important;
+            border-left: 0 !important;
+            box-shadow: none !important;
+            outline: 0 !important;
+            background-image: none !important;
+        }
+
+        .ak-film-grid::before,
+        .ak-film-grid::after,
+        .ak-film-card::before,
+        .ak-film-card::after,
+        .ak-film-card>div::before,
+        .ak-film-card>div::after {
+            content: none !important;
+            display: none !important;
+            border: 0 !important;
+            background: none !important;
+            box-shadow: none !important;
+        }
+
+        .ak-film-card {
+            display: flex;
+            flex-direction: row-reverse;
+            height: 100%;
+            background-color: #ffffff !important;
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+
+        .ak-film-content {
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+
+        .ak-film-img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            display: block;
+            border: 0 !important;
+        }
+
+        .ak-film-grid>.ak-film-item {
+            position: relative;
+        }
+
+        @media (min-width: 992px) {
+            .ak-film-grid>.ak-film-item:nth-child(-n+3)::after {
+                content: "" !important;
+                display: block !important;
+                position: absolute;
+                left: 12px;
+                right: 12px;
+                bottom: -18px;
+                height: 1px;
+                background: #e5e7eb !important;
+                border: 0 !important;
+                box-shadow: none !important;
+            }
+        }
+
+        .ak-sports-title-block {
+            margin-bottom: 35px;
+        }
+
+        .ak-sports-title-row {
+            padding-bottom: 8px;
+        }
+
+        .ak-sports-double-dot-line {
+            width: 100%;
+            height: 6px;
+            border-top: 1px dotted #777;
+            border-bottom: 1px dotted #777;
+        }
+
+        .ak-sports-section {
+            border: 0 !important;
+            border-top: 0 !important;
+            border-bottom: 0 !important;
+            box-shadow: none !important;
+            outline: 0 !important;
+            background: #f0fdf4 !important;
+        }
+
+        .ak-sports-section::before,
+        .ak-sports-section::after,
+        .ak-sports-section .content-box::before,
+        .ak-sports-section .content-box::after {
+            content: none !important;
+            display: none !important;
+            border: 0 !important;
+            background: none !important;
+            box-shadow: none !important;
+        }
+
+        .ak-sports-title {
+            font-size: 1.5rem;
+            color: #16a34a;
+        }
+
+        .ak-sports-grid {
+            border: 0 !important;
+            box-shadow: none !important;
+            outline: 0 !important;
+            --bs-gutter-y: 36px;
+        }
+
+        .ak-sports-grid,
+        .ak-sports-grid>div,
+        .ak-sports-item,
+        .ak-sports-card,
+        .ak-sports-card>div,
+        .ak-sports-img-box {
+            border: 0 !important;
+            border-top: 0 !important;
+            border-right: 0 !important;
+            border-bottom: 0 !important;
+            border-left: 0 !important;
+            box-shadow: none !important;
+            outline: 0 !important;
+            background-image: none !important;
+        }
+
+        .ak-sports-grid::before,
+        .ak-sports-grid::after,
+        .ak-sports-card::before,
+        .ak-sports-card::after,
+        .ak-sports-card>div::before,
+        .ak-sports-card>div::after {
+            content: none !important;
+            display: none !important;
+            border: 0 !important;
+            background: none !important;
+            box-shadow: none !important;
+        }
+
+        .ak-sports-card {
+            display: flex;
+            flex-direction: row-reverse;
+            height: 100%;
+            background: transparent !important;
+        }
+
+        .ak-sports-img-box {
+            width: 120px;
+            height: 120px;
+            min-width: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            background: #dcfce7 !important;
+            color: #16a34a;
+            font-weight: 700;
+            font-size: 14px;
+        }
+
+        .ak-sports-item {
+            position: relative;
+        }
+
+        @media (min-width: 992px) {
+            .ak-sports-grid>.ak-sports-item:nth-child(-n+3)::after {
+                content: "" !important;
+                display: block !important;
+                position: absolute;
+                left: 12px;
+                right: 12px;
+                bottom: -18px;
+                height: 1px;
+                background: #d1d5db !important;
+                border: 0 !important;
+                box-shadow: none !important;
+            }
+        }
+
+        .ak-sports-img-box {
+            width: 120px;
+            height: 120px;
+            min-width: 120px;
+            flex-shrink: 0;
+            overflow: hidden;
+            background: #dcfce7 !important;
+        }
+
+        .ak-sports-img-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .ak-sports-text {
+            padding-right: 14px !important;
+        }
+
+        .ak-photo-gallery-section {
+            background: #ffffff !important;
+            border: 0 !important;
+        }
+
+        .ak-photo-gallery-title-block {
+            margin-bottom: 24px;
+        }
+
+        .ak-photo-gallery-title-row {
+            padding-bottom: 8px;
+        }
+
+        .ak-photo-gallery-title {
+            font-size: 1.5rem;
+            color: #7c3aed;
+        }
+
+        .ak-photo-gallery-double-dot-line {
+            width: 100%;
+            height: 6px;
+            border-top: 1px dotted #777;
+            border-bottom: 1px dotted #777;
+        }
+
+        .ak-gallery-card {
+            position: relative;
+            display: block;
+            width: 100%;
+            overflow: hidden;
+            text-decoration: none;
+            background: #f3f4f6;
+        }
+
+        .ak-gallery-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.4s ease;
+        }
+
+        .ak-gallery-card:hover img {
+            transform: scale(1.06);
+        }
+
+        .ak-gallery-card::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 55%;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0));
+            pointer-events: none;
+        }
+
+        .ak-gallery-date {
+            position: absolute;
+            left: 12px;
+            bottom: 10px;
+            z-index: 2;
+            color: #ffffff;
+            font-size: 0.85rem;
+            font-weight: 700;
+            background: rgba(0, 0, 0, 0.45);
+            padding: 4px 9px;
+        }
+
+        .ak-gallery-large {
+            height: 390px;
+        }
+
+        .ak-gallery-medium {
+            height: 185px;
+        }
+
+        .ak-gallery-small {
+            height: 170px;
+        }
+
+        .ak-gallery-right-stack {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            height: 100%;
+        }
+
+        @media (max-width: 991.98px) {
+            .ak-gallery-large {
+                height: 320px;
+            }
+
+            .ak-gallery-medium {
+                height: 190px;
+            }
+        }
+
+        @media (max-width: 575.98px) {
+
+            .ak-gallery-large,
+            .ak-gallery-medium,
+            .ak-gallery-small {
+                height: 210px;
+            }
+        }
+
+        .ak-birthday-section {
+            background: #ffffff !important;
+            border-top: 0 !important;
+        }
+
+        .ak-birthday-title-block {
+            margin-bottom: 24px;
+        }
+
+        .ak-birthday-title-row {
+            padding-bottom: 8px;
+        }
+
+        .ak-birthday-double-dot-line {
+            width: 100%;
+            height: 6px;
+            border-top: 1px dotted #777;
+            border-bottom: 1px dotted #777;
+        }
+
+        .ak-birthday-list {
+            padding-top: 0;
+        }
+
+        .ak-footer {
+            width: 100vw !important;
+            max-width: 100vw !important;
+            margin-left: calc(50% - 50vw) !important;
+            margin-right: calc(50% - 50vw) !important;
+            padding: 48px 0 24px 0 !important;
+            background: #212529 !important;
+            overflow-x: hidden;
+        }
+
+        .ak-footer-full {
+            width: 100% !important;
+            max-width: 1440px !important;
+            margin-left: auto !important;
+            margin-right: auto !important;
+            padding-left: 40px !important;
+            padding-right: 40px !important;
+        }
+
+        .ak-footer .row {
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+        }
+
+        .ak-footer a {
+            color: inherit;
+        }
+
+        @media (max-width: 991.98px) {
+            .ak-footer-full {
+                padding-left: 28px !important;
+                padding-right: 28px !important;
+            }
+        }
+
+        @media (max-width: 575.98px) {
+            .ak-footer {
+                padding-top: 34px !important;
+                padding-bottom: 20px !important;
+            }
+
+            .ak-footer-full {
+                padding-left: 16px !important;
+                padding-right: 16px !important;
+            }
+        }
     </style>
+
 </head>
 
 <body class="akila-v3-original-colors">
@@ -602,7 +2236,7 @@
                 </div>
 
                 <h1 class="fw-black text-dark text-center m-0" style="font-size: 2.5rem; font-weight: 900;">
-                    અકિલા ન્યૂઝ</span>
+                    અકિલા ન્યૂઝ
                 </h1>
 
                 <div class="d-flex align-items-center gap-3">
@@ -656,12 +2290,12 @@
 
     <!-- Main Content -->
     <main class="content-box py-4">
-        <div class="row g-4">
+        <div class="row g-4 ak-main-layout">
 
 
             <aside class="col-lg-3 d-none d-lg-block">
                 <!-- Ad 1 -->
-                <div class="bg-light border border-2 border-dashed rounded d-flex align-items-center justify-content-center text-secondary fw-bold mb-4"
+                <div class="ak-ad-box bg-light border border-2 border-dashed rounded d-flex align-items-center justify-content-center text-secondary fw-bold mb-4"
                     style="height: 12.5rem; border-color: #ccc !important;">
                     જાહેરાત
                 </div>
@@ -671,8 +2305,8 @@
                     <h5 class="text-danger fw-bold border-bottom border-2 border-danger pb-2 mb-3 text-uppercase">સમાચાર
                         ફટાફટ</h5>
                     <ul class="list-unstyled mb-0" style="font-size: 0.9rem;">
-                        <li class="d-flex gap-2 mb-3 pb-2 border-bottom cursor-pointer">
-                            <!-- Left Sidebar -->
+                        <!-- <li class="d-flex gap-2 mb-3 pb-2 border-bottom cursor-pointer"> -->
+                        <!-- Left Sidebar -->
                         <li class="d-flex flex-column gap-2 mb-3 pb-2 border-bottom cursor-pointer">
                             <img src="image/varsad.png" alt="News Image" class="w-100 rounded"
                                 style="height: 130px; object-fit: cover;">
@@ -731,7 +2365,6 @@
                 </div>
 
 
-
                 <!-- Ad 2 (Scrolls with page) -->
                 <!-- <div class="bg-light border border-2 border-dashed rounded d-flex align-items-center justify-content-center text-secondary fw-bold"
                     style="height: 12.5rem; border-color: #ccc !important;">
@@ -741,9 +2374,9 @@
 
 
             <!-- Center Column -->
-            <div class="col-lg-6">
+            <div class="col-lg-6 ak-main-center">
                 <!-- Primary Hero -->
-                <article class="bg-white border mb-4">
+                <article class="bg-white border mb-0">
                     <div class="position-relative">
                         <img src="image/war.png" alt="News Image" class="w-100"
                             style="height: 20rem; object-fit: cover;">
@@ -757,10 +2390,11 @@
                         <h2 class="fw-bold mb-3" style="font-size: 1.4rem; line-height: 1.4;">
                             અમેરિકા-ઈરાન ફરી બાખડયાઃ સામસામા હુમલા
                         </h2>
-                        <p class="text-secondary mb-3" style="font-size: 0.9rem;">
+                        <p class="text-secondary mb-0" style="font-size: 0.9rem;">
                             હોર્મુઝમાં કાર્ગો શિપ ઉપર હુમલો થતાં ટ્રમ્‍પ ભડક્‍યાઃ ઈરાનના મિસાઈલ-ડ્રોન સાઈટ ઉપર કરી
                             એરસ્‍ટ્રાઈક : અસ્‍થાયી શાંતિ સમજુતી છતાં પણ ઈરાને હોર્મુઝમાં ૪ ડ્રોન એટેક કરતાં સ્‍થિતિ
                             વણસીઃ ઈરાને નવેસરથી અમેરિકી ઠેકાણાઓને નિશાના પર લીધા
+                        </p>
                         <div class="d-flex gap-2 text-secondary" style="font-size: 0.8rem;">
                             <span>•</span>
                             <span>2 કલાક પહેલા</span>
@@ -768,9 +2402,11 @@
                     </div>
                 </article>
 
+                <div class="ak-news-separator"></div>
+
                 <!-- Sub Stories Grid -->
-                <div class="row g-3 mb-4">
-                    <div class="col-md-6">
+                <div class="row g-3 mb-4 ak-two-story-grid">
+                    <div class="col-md-6 ak-story-col">
                         <article class="bg-white border h-100">
                             <img src="image/rain.png" alt="News Image" class="w-100"
                                 style="height: 11.25rem; object-fit: cover;">
@@ -785,7 +2421,7 @@
                             </div>
                         </article>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 ak-story-col">
                         <article class="bg-white border h-100">
                             <img src="image/war2.png" class="w-100" style="height: 11.25rem; object-fit: cover;">
                             <div class="p-3">
@@ -798,121 +2434,198 @@
                 </div>
 
                 <!-- Ad Banner Full Width -->
-                <div class="bg-light border border-2 border-dashed rounded d-flex align-items-center justify-content-center fw-bold text-secondary mb-4"
+                <div class="ak-ad-box bg-light border border-2 border-dashed rounded d-flex align-items-center justify-content-center fw-bold text-secondary mb-4"
                     style="height: 6.25rem; border-color: #adb5bd !important;">
                     BANNER જાહેરાત
                 </div>
 
 
                 <!-- More Stories -->
-                <div class="d-flex flex-column gap-3">
-                    <article class="bg-white border p-3 d-flex gap-3">
+                <div class="d-flex flex-column gap-3 ak-more-news-list">
+                    <article class="ak-side-news-card d-flex">
                         <div class="flex-shrink-0">
-                            <img src="image/soyab.png" style="width: 6rem; height: 6rem; object-fit: cover;">
+                            <img src="image/soyab.png" class="ak-side-news-img" alt="">
                         </div>
-                        <div>
-                            <h4 class="fw-bold mb-1" style="font-size: 1rem;">શોયબ અખ્‍તરનાં ભાઇનો જનાજો કે પછી આતંકીઓનો
-                                મેળોઃ ખૂંખાર ત્રાસવાદી હાજર હતા</h4>
-                            <span class="text-secondary" style="font-size: 0.8rem;">5 કલાક પહેલા</span>
+                        <div class="ak-side-news-content">
+                            <h4 class="fw-bold ak-side-news-title">
+                                શોયબ અખ્‍તરનાં ભાઇનો જનાજો કે પછી આતંકીઓનો મેળોઃ ખૂંખાર ત્રાસવાદી હાજર હતા
+                            </h4>
+                            <span class="text-secondary ak-side-news-time">5 કલાક પહેલા</span>
                         </div>
                     </article>
-                    <article class="bg-white border p-3 d-flex gap-3">
+
+                    <article class="ak-side-news-card d-flex">
                         <div class="flex-shrink-0">
-                            <img src="image/woman.png" style="width: 6rem; height: 6rem; object-fit: cover;">
+                            <img src="image/woman.png" class="ak-side-news-img" alt="">
                         </div>
-                        <div>
-                            <h4 class="fw-bold mb-1" style="font-size: 1rem;">મહિલાઓ દરરોજ ૭ કલાક ચૂકવવામાં ન આવતા ઘરકામ
-                                અને સંભાળ રાખવામાં વિતાવે છે</h4>
-                            <span class="text-secondary" style="font-size: 0.8rem;">6 કલાક પહેલા</span>
+                        <div class="ak-side-news-content">
+                            <h4 class="fw-bold ak-side-news-title">
+                                મહિલાઓ દરરોજ ૭ કલાક ચૂકવવામાં ન આવતા ઘરકામ અને સંભાળ રાખવામાં વિતાવે છે
+                            </h4>
+                            <span class="text-secondary ak-side-news-time">6 કલાક પહેલા</span>
                         </div>
                     </article>
-                    <article class="bg-white border p-3 d-flex gap-3">
+
+                    <article class="ak-side-news-card d-flex">
                         <div class="flex-shrink-0">
-                            <img src="image/war3.png" style="width: 6rem; height: 6rem; object-fit: cover;">
+                            <img src="image/war3.png" class="ak-side-news-img" alt="">
                         </div>
-                        <div>
-                            <h4 class="fw-bold mb-1" style="font-size: 1rem;">ઈઝરાયલ-લેબેનોન વચ્‍ચે આખરે શાંતિ સમજૂતી પર
-                                હસ્‍તાક્ષર</h4>
-                            <span class="text-secondary" style="font-size: 0.8rem;">8 કલાક પહેલા</span>
+                        <div class="ak-side-news-content">
+                            <h4 class="fw-bold ak-side-news-title">
+                                ઈઝરાયલ-લેબેનોન વચ્‍ચે આખરે શાંતિ સમજૂતી પર હસ્‍તાક્ષર
+                            </h4>
+                            <span class="text-secondary ak-side-news-time">8 કલાક પહેલા</span>
                         </div>
                     </article>
-                    <article class="bg-white border p-3 d-flex gap-3">
+
+                    <article class="ak-side-news-card d-flex">
                         <div class="flex-shrink-0">
-                            <img src="image/ram2.png" style="width: 6rem; height: 6rem; object-fit: cover;">
+                            <img src="image/ram2.png" class="ak-side-news-img" alt="">
                         </div>
-                        <div>
-                            <h4 class="fw-bold mb-1" style="font-size: 1rem;">
+                        <div class="ak-side-news-content">
+                            <h4 class="fw-bold ak-side-news-title">
                                 રામ મંદિર અયોધ્‍યામાંથી ૨૦૦૦ કરોડ રૂપિયા ચોરાઈ ગયા
                             </h4>
-                            <p style="font-size: 14px;">TMC અને શિવસેના UBT ને તોડી પાડવા માટે પૈસાનો ઉપયોગ થયોઃ સંજય રાઉત</p>
-                            <span class="text-secondary" style="font-size: 0.8rem;">9 કલાક પહેલા</span>
+                            <p class="ak-side-news-desc">
+                                TMC અને શિવસેના UBT ને તોડી પાડવા માટે પૈસાનો ઉપયોગ થયોઃ સંજય રાઉત
+                            </p>
+                            <span class="text-secondary ak-side-news-time">9 કલાક પહેલા</span>
                         </div>
                     </article>
 
-                    <article class="bg-white border p-3 d-flex gap-3">
+                    <article class="ak-side-news-card d-flex">
                         <div class="flex-shrink-0">
-                            <img src="image/medi.webp" style="width: 6rem; height: 6rem; object-fit: cover;">
+                            <img src="image/medi.webp" class="ak-side-news-img" alt="">
                         </div>
-                        <div>
-                            <h4 class="fw-bold mb-1" style="font-size: 1rem;">
+                        <div class="ak-side-news-content">
+                            <h4 class="fw-bold ak-side-news-title">
                                 દવાની આયાત સરળ બનશે ૧૯૪૫ના જૂના નિયમમાં ફેરફાર થશે
                             </h4>
-                            <span class="text-secondary" style="font-size: 0.8rem;">10 કલાક પહેલા</span>
+                            <span class="text-secondary ak-side-news-time">10 કલાક પહેલા</span>
                         </div>
                     </article>
 
-                    <article class="bg-white border p-3 d-flex gap-3">
+                    <article class="ak-side-news-card d-flex">
                         <div class="flex-shrink-0">
-                            <img src="image/aisa.jpg" style="width: 6rem; height: 6rem; object-fit: cover;">
+                            <img src="image/aisa.jpg" class="ak-side-news-img" alt="">
                         </div>
-                        <div>
-                            <h4 class="fw-bold mb-1" style="font-size: 1rem;">
+                        <div class="ak-side-news-content">
+                            <h4 class="fw-bold ak-side-news-title">
                                 પશ્ચિમ એશિયાના તણાવમાં ઓટ આવતાં હવાઈ ક્ષેત્રે વૈશ્વિક હલચલ: એર ઈન્ડિયા આંતરરાષ્ટ્રીય
                                 ફ્લાઈટ્સમાં કરેલો મોટો...
                             </h4>
-                            <span class="text-secondary" style="font-size: 0.8rem;">11 કલાક પહેલા</span>
+                            <span class="text-secondary ak-side-news-time">11 કલાક પહેલા</span>
                         </div>
                     </article>
 
-                    <article class="bg-white border p-3 d-flex gap-3">
+                    <article class="ak-side-news-card d-flex">
                         <div class="flex-shrink-0">
-                            <img src="image/white.jpg" style="width: 6rem; height: 6rem; object-fit: cover;">
+                            <img src="image/white.jpg" class="ak-side-news-img" alt="">
                         </div>
-                        <div>
-                            <h4 class="fw-bold mb-1" style="font-size: 1rem;">
+                        <div class="ak-side-news-content">
+                            <h4 class="fw-bold ak-side-news-title">
                                 વ્હાઇટ હાઉસમાં ભારત-અમેરિકા સંબંધોનો નવો સૂર્યોદય : આગામી ૨૦૨૭ની શરૂઆતમાં રાષ્ટ્રપતિ
                                 ડોનાલ્ડ ટ્રમ્પ લેશે ભારતની મુલાકાત :
                             </h4>
-                            <p style="font-size: 14px;"> બંને વૈશ્વિક સત્તાઓ વચ્ચે વ્યાપારી અને વ્યાપક વ્યૂહાત્મક ભાગીદારીને મજબૂત કરવા માટે ખુદ વિદેશ મંત્રી રુબિયો ભારત પ્રવાસે : વડાપ્રધાન નરેન્દ્રભાઈ મોદી અને..</p>
-                            <span class="text-secondary" style="font-size: 0.8rem;">12 કલાક પહેલા</span>
+                            <p class="ak-side-news-desc">
+                                બંને વૈશ્વિક સત્તાઓ વચ્ચે વ્યાપારી અને વ્યાપક વ્યૂહાત્મક ભાગીદારીને મજબૂત કરવા માટે ખુદ
+                                વિદેશ મંત્રી રુબિયો ભારત પ્રવાસે : વડાપ્રધાન નરેન્દ્રભાઈ મોદી અને..
+                            </p>
+                            <span class="text-secondary ak-side-news-time">12 કલાક પહેલા</span>
                         </div>
                     </article>
 
-                    <article class="bg-white border p-3 d-flex gap-3">
+                    <article class="ak-side-news-card d-flex">
                         <div class="flex-shrink-0">
-                            <img src="image/sy.jpg" style="width: 6rem; height: 6rem; object-fit: cover;">
+                            <img src="image/sy.jpg" class="ak-side-news-img" alt="">
                         </div>
-                        <div>
-                            <h4 class="fw-bold mb-1" style="font-size: 1rem;">
+                        <div class="ak-side-news-content">
+                            <h4 class="fw-bold ak-side-news-title">
                                 નરેન્‍દ્રભાઇ મોદીનો સેશેલ્‍સ પ્રવાસ : દરિયાઇ સુરક્ષા અને વ્‍યુહાત્‍મક ભાગીદારી મજબૂત
                                 બનશે
                             </h4>
-                            <span class="text-secondary" style="font-size: 0.8rem;">13 કલાક પહેલા</span>
+                            <span class="text-secondary ak-side-news-time">13 કલાક પહેલા</span>
                         </div>
                     </article>
+                    <div class="ak-ad-box bg-light border border-2 border-dashed rounded d-flex align-items-center justify-content-center fw-bold text-secondary mb-4"
+                        style="height: 6.25rem; border-color: #adb5bd !important;">
+                        BANNER જાહેરાત
+                    </div>
+
                 </div>
             </div>
 
             <!-- Right Sidebar -->
             <div class="col-lg-3">
                 <!-- Ad -->
-                <div class="bg-light border border-2 border-dashed rounded d-flex align-items-center justify-content-center text-secondary fw-bold mb-4"
+                <div class="ak-ad-box bg-light border border-2 border-dashed rounded d-flex align-items-center justify-content-center text-secondary fw-bold mb-4"
                     style="height: 12.5rem; border-color: #ccc !important;">
                     જાહેરાત
                 </div>
 
+                <!-- સોશિયલ મીડિયા આવૃત્તિ -->
+                <section class="bg-white p-3 mb-4 ak-social-widget">
+
+                    <!-- Header -->
+                    <div
+                        class="d-flex justify-content-between align-items-center border-bottom border-primary border-2 pb-2 mb-3">
+                        <h5 class="fw-bold text-primary m-0">
+                            સોશિયલ મીડિયા આવૃત્તિ
+                        </h5>
+
+                        <a href="#" class="text-decoration-none text-secondary small">
+                            વધુ જુઓ <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <!-- Banner Placeholder -->
+                    <div class="social-media-banner">
+                        <div class="img-placeholder">
+                            <img src="image/social.jpg" class="img-fluid" style="object-fit: contain;">
+                        </div>
+                    </div>
+
+                </section>
+
+                <!-- Opinion Poll -->
+                <div class="bg-white border p-3 mb-4 ak-opinion-widget">
+                    <h5 class="text-primary fw-bold border-bottom border-primary border-2 pb-2 mb-3 text-uppercase">
+                        ઓપિનિયન પોલ</h5>
+                    <p class="fw-bold small">આગામી ચૂંટણીમાં કોની સરકાર?</p>
+                    <div class="d-flex flex-column gap-2 mb-3 small ak-opinion-options">
+                        <label class="d-flex align-items-center gap-2"><input type="radio" name="poll"
+                                class="form-check-input m-0"> ભાજપ</label>
+                        <label class="d-flex align-items-center gap-2"><input type="radio" name="poll"
+                                class="form-check-input m-0"> કોંગ્રેસ</label>
+                        <label class="d-flex align-items-center gap-2"><input type="radio" name="poll"
+                                class="form-check-input m-0"> AAP</label>
+                        <label class="d-flex align-items-center gap-2"><input type="radio" name="poll"
+                                class="form-check-input m-0"> અન્ય</label>
+                    </div>
+                    <button class="btn btn-danger w-100 fw-bold" style="font-size: 0.9rem;"
+                        onclick="alert('તમારો મત મળી ગયો. આભાર!')">મત આપો</button>
+                </div>
+
+                <!-- Sticky Note -->
+                <div class="sticky-note p-4 pt-5 mb-4">
+                    <div
+                        class="d-flex justify-content-between align-items-center border-bottom border-warning pb-2 mb-3">
+                        <h5 class="fw-bold text-primary m-0">તંત્રો સ્થાને થી</h5>
+                        <a href="#" class="text-decoration-none text-primary fw-bold" style="font-size: 0.8rem;">વધુ
+                            વાંચો</a>
+                    </div>
+                    <p class="fw-bold text-dark mb-3">કામ કરજો અને કરવા દેજો!</p>
+                    <ul class="list-unstyled small text-secondary lh-lg">
+                        <li class="border-bottom border-warning pb-1 mb-1">• સરકારી કચેરીઓમાં હવે QR કોડ દ્વારા ફરિયાદ
+                        </li>
+                        <li class="border-bottom border-warning pb-1 mb-1">• નવી ડિજિટલ ઈન્ડિયા યોજનાનો વિસ્તાર</li>
+                        <li class="border-bottom border-warning pb-1 mb-1">• પંચાયતોને સીધો ભંડોળ ટ્રાન્સફર</li>
+                        <li>• મનરેગા મજૂરોનું ઈ-પેમેન્ટ શરૂ</li>
+                    </ul>
+                </div>
+
                 <!-- Video Section -->
-                <div class="bg-white border p-3 mb-4">
+                <div class="bg-white border p-3 mb-4 ak-video-widget">
                     <div
                         class="d-flex justify-content-between align-items-center border-bottom border-danger border-2 pb-2 mb-3">
                         <h5 class="fw-bold text-danger m-0 text-uppercase">વીડિયો</h5>
@@ -986,139 +2699,65 @@
                     </div>
                 </div>
 
-                <!-- Opinion Poll -->
-                <div class="bg-white border p-3 mb-4">
-                    <h5 class="text-primary fw-bold border-bottom border-primary border-2 pb-2 mb-3 text-uppercase">
-                        ઓપિનિયન પોલ</h5>
-                    <p class="fw-bold small">આગામી ચૂંટણીમાં કોની સરકાર?</p>
-                    <div class="d-flex flex-column gap-2 mb-3 small">
-                        <label class="d-flex align-items-center gap-2"><input type="radio" name="poll"
-                                class="form-check-input m-0"> ભાજપ</label>
-                        <label class="d-flex align-items-center gap-2"><input type="radio" name="poll"
-                                class="form-check-input m-0"> કોંગ્રેસ</label>
-                        <label class="d-flex align-items-center gap-2"><input type="radio" name="poll"
-                                class="form-check-input m-0"> AAP</label>
-                        <label class="d-flex align-items-center gap-2"><input type="radio" name="poll"
-                                class="form-check-input m-0"> અન્ય</label>
-                    </div>
-                    <button class="btn btn-danger w-100 fw-bold" style="font-size: 0.9rem;"
-                        onclick="alert('તમારો મત મળી ગયો. આભાર!')">મત આપો</button>
-                </div>
-                <!-- સોશિયલ મીડિયા આવૃત્તિ -->
-                <section class="bg-white border p-3 mb-4">
-
-                    <!-- Header -->
-                    <div
-                        class="d-flex justify-content-between align-items-center border-bottom border-primary border-2 pb-2 mb-3">
-                        <h5 class="fw-bold text-primary m-0">
-                            સોશિયલ મીડિયા આવૃત્તિ
-                        </h5>
-
-                        <a href="#" class="text-decoration-none text-secondary small">
-                            વધુ જુઓ <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-
-                    <!-- Banner Placeholder -->
-                    <div class="social-media-banner">
-                        <div class="img-placeholder"> <img src="image/social.jpg" class="img-fluid"
-                                style="object-fit: contain;"></div>
-
-                        <!-- <div class="img-placeholder">
-                            <div class="text-center">
-                                <i class="fas fa-image fa-3x mb-3"></i>
-                                <div class="fw-bold">
-                                    Social Media Banner
-                                </div>
-                                <small class="text-secondary">
-                                    1200 × 500 Recommended
-                                </small>
-                            </div>
-                        </div> -->
-
-                    </div>
-
-                </section>
-
-                <style>
-                    .social-media-banner .img-placeholder {
-                        width: 100%;
-                        height: auto;
-                        border: none;
-                        border-radius: 8px;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        color: #64748b;
-                        overflow: hidden;
-                    }
-                </style>
-
                 <!-- Ad -->
-                <div class="bg-light border border-2 border-dashed rounded d-flex align-items-center justify-content-center text-secondary fw-bold mb-4"
+                <!-- <div class="ak-ad-box bg-light border border-2 border-dashed rounded d-flex align-items-center justify-content-center text-secondary fw-bold mb-4"
                     style="height: 12.5rem; border-color: #ccc !important;">
                     જાહેરાત
-                </div>
+                </div> -->
 
-                <!-- Sticky Note -->
-                <div class="sticky-note p-4 pt-5 mb-4">
-                    <div
-                        class="d-flex justify-content-between align-items-center border-bottom border-warning pb-2 mb-3">
-                        <h5 class="fw-bold text-primary m-0">તંત્રો સ્થાને થી</h5>
-                        <a href="#" class="text-decoration-none text-primary fw-bold" style="font-size: 0.8rem;">વધુ
-                            વાંચો</a>
-                    </div>
-                    <p class="fw-bold text-dark mb-3">કામ કરજો અને કરવા દેજો!</p>
-                    <ul class="list-unstyled small text-secondary lh-lg">
-                        <li class="border-bottom border-warning pb-1 mb-1">• સરકારી કચેરીઓમાં હવે QR કોડ દ્વારા ફરિયાદ
-                        </li>
-                        <li class="border-bottom border-warning pb-1 mb-1">• નવી ડિજિટલ ઈન્ડિયા યોજનાનો વિસ્તાર</li>
-                        <li class="border-bottom border-warning pb-1 mb-1">• પંચાયતોને સીધો ભંડોળ ટ્રાન્સફર</li>
-                        <li>• મનરેગા મજૂરોનું ઈ-પેમેન્ટ શરૂ</li>
-                    </ul>
-                </div>
+
                 <!-- Newsletter Subscribe -->
-                <div class="bg-white border p-3 mb-4">
+                <!-- Newsletter Subscribe -->
+                <div class="ak-newsletter-widget">
+                    <div class="ak-newsletter-box">
+                        <div class="text-center ak-newsletter-content">
+                            <h5 class="fw-bold text-danger mb-2">
+                                <i class="fas fa-bell me-2"></i>
+                                તાજા સમાચાર એલર્ટ્સ
+                            </h5>
 
-                    <div class="text-center mb-3">
-                        <h5 class="fw-bold text-danger mb-2">
-                            <i class="fas fa-bell me-2"></i>
-                            તાજા સમાચાર એલર્ટ્સ
-                        </h5>
+                            <p class="small text-secondary mb-3">
+                                ટોપ સમાચાર અને બ્રેકિંગ ન્યૂઝ સીધી તમારા ઈમેલ પર મેળવો.
+                            </p>
 
-                        <p class="small text-secondary mb-0">
-                            ટોપ સમાચાર અને બ્રેકિંગ ન્યૂઝ સીધી તમારા ઈમેલ પર મેળવો.
-                        </p>
+                            <div class="mb-2">
+                                <input type="email" class="form-control" placeholder="તમારું ઈમેલ એડ્રેસ">
+                            </div>
+
+                            <button class="btn btn-danger w-100 fw-bold">
+                                Subscribe Now
+                            </button>
+                        </div>
                     </div>
-
-                    <div class="mb-2">
-                        <input type="email" class="form-control" placeholder="તમારું ઈમેલ એડ્રેસ">
-                    </div>
-
-                    <button class="btn btn-danger w-100 fw-bold">
-                        Subscribe Now
-                    </button>
-
                 </div>
+
+
                 <!-- Ad -->
                 <!-- <div class="bg-light border border-2 border-dashed rounded d-flex align-items-center justify-content-center text-secondary fw-bold" style="height: 12.5rem; border-color: #ccc !important;">
                     જાહેરાત
                 </div> -->
+
+
             </div>
         </div>
     </main>
-
     <!-- મારુ ગુજરાત -->
-    <section class="bg-white border-top py-5 mt-3">
+    <section class="bg-white border-top pt-5 mt-3 ak-maru-section">
         <div class="content-box">
 
             <!-- Section Header -->
-            <div class="d-flex justify-content-between align-items-center border-bottom border-2 border-dark pb-2 mb-4">
-                <h2 class="fw-black m-0" style="font-size:1.5rem;">મારુ ગુજરાત</h2>
+            <div class="ak-maru-title-block">
+                <div class="d-flex justify-content-between align-items-center ak-maru-title-row">
+                    <h2 class="fw-black m-0" style="font-size:1.5rem;">
+                        મારુ ગુજરાત
+                    </h2>
 
-                <a href="#" class="text-decoration-none fw-bold text-primary small">
-                    બધા જુઓ <i class="fas fa-arrow-right"></i>
-                </a>
+                    <a href="#" class="text-decoration-none fw-bold text-primary small">
+                        બધા જુઓ <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="ak-maru-double-dot-line"></div>
             </div>
 
             <!-- Top 3 News With Images -->
@@ -1161,72 +2800,82 @@
                         આક્રોશ
                     </p>
                 </div>
+            </div>
+            <!-- Short News Without Image -->
+            <div class="ak-maru-short-news-grid">
+
+                <div class="ak-maru-short-news-col">
+                    <a href="#" class="ak-maru-short-news-link">
+                        અમદાવાદ-રાજકોટ પર મોટા ભૂકંપનો ખતરો હોવાનો અભ્‍યાસમાં દાવો
+                    </a>
+
+                    <a href="#" class="ak-maru-short-news-link">
+                        108ની ટીમ બની દેવદૂત : ભારે વરસાદ અને જંગલના જોખમી રસ્તાઓ પર દર્દીનો જીવ બચાવ્યો
+                    </a>
+
+                    <a href="#" class="ak-maru-short-news-link">
+                        હવાઈ પરિવહન ક્ષેત્રે પોરબંદરવાસીઓ માટે ખુશીના સમાચાર
+                    </a>
+                </div>
+
+                <div class="ak-maru-short-news-col">
+                    <a href="#" class="ak-maru-short-news-link">
+                        અમદાવાદમાં બે લક્ઝુરિયસ કાર વચ્ચે જોરદાર ટક્કર
+                    </a>
+
+                    <a href="#" class="ak-maru-short-news-link">
+                        વડોદરાના વાઘોડિયા રોડ પર વેપારી ઉપર ફિલ્‍મી ઢબે ફાયરિંગઃ યુવક ગંભીર
+                    </a>
+
+                    <a href="#" class="ak-maru-short-news-link">
+                        કપડવંજમાં ગેરકાયદેસર ફટાકડાની ફેક્ટરીમાં જોરદાર વિસ્ફોટ
+                    </a>
+                </div>
+
+                <div class="ak-maru-short-news-col">
+                    <a href="#" class="ak-maru-short-news-link">
+                        ડ્રગ્‍સ માફિયાઓને ભરી પીવા AI આધારીત NARIT સોફટવેર સાથે મેદાને ગુજરાત
+                    </a>
+
+                    <a href="#" class="ak-maru-short-news-link">
+                        ગુજરાત દેશનું પ્રથમ રાજ્‍ય છેઃ જ્ઞાનેન્‍દ્રસિંહ મલ્લિક
+                    </a>
+
+                    <a href="#" class="ak-maru-short-news-link">
+                        ભારે વરસાદની આગાહી વચ્ચે તંત્ર એલર્ટ મોડમાં
+                    </a>
+                </div>
 
             </div>
 
-            <!-- Dotted Divider -->
-            <div class="row mt-4 pt-4" style="border-top:2px dotted #d6d6d6;">
 
-                <div class="col-lg-4 col-md-6 p-3 border-end">
-                    <h6 class="fw-bold mb-0">અમદાવાદ-રાજકોટ પર મોટા ભૂકંપનો ખતરો હોવાનો અભ્‍યાસમાં દાવો </h6>
-                </div>
-
-                <div class="col-lg-4 col-md-6 p-3 border-end">
-                    <h6 class="fw-bold mb-0">108ની ટીમ બની દેવદૂત :ભારે વરસાદ અને જંગલના અત્યંત જોખમી રસ્તાઓ પર પગપાળા
-                        ચાલીને દર્દીનો જીવ બચાવ્યો </h6>
-                </div>
-
-                <div class="col-lg-4 col-md-6 p-3">
-                    <h6 class="fw-bold mb-0">હવાઈ પરિવહન ક્ષેત્રે પોરબંદરવાસીઓ માટે ખુશીના સમાચાર: લાંબા સમયની
-                        પ્રતીક્ષાનો આવ્યો અંત</h6>
-                </div>
-
-                <div class="col-lg-4 col-md-6 p-3 border-end">
-                    <h6 class="fw-bold mb-0">અમદાવાદમાં બે લક્ઝુરિયસ કાર વચ્ચે જોરદાર ટક્કર વાહનોના આગળના ભાગે
-                        કુરચે-કુરચા ઉડ્યા:સદનસીબે એરબેગ્સના કારણે મોટી જાનહાનિ ટળી</h6>
-                </div>
-
-                <div class="col-lg-4 col-md-6 p-3 border-end">
-                    <h6 class="fw-bold mb-0">વડોદરાના વાઘોડિયા રોડ પર વેપારી ઉપર ફિલ્‍મી ઢબે ફાયરિંગઃ યુવક ગંભીર</h6>
-                </div>
-
-                <div class="col-lg-4 col-md-6 p-3">
-                    <h6 class="fw-bold mb-0">કપડવંજમાં ગેરકાયદેસર ફટાકડાની ફેક્ટરીમાં જોરદાર વિસ્ફોટ:આખું મકાન પત્તાના
-                        મહેલની જેમ ધરાશાયી: ૫ થી ૬ લોકોને ગંભીર ઇજા </h6>
-                </div>
-
-                <div class="col-lg-4 col-md-6 p-3 border-end">
-                    <h6 class="fw-bold mb-0">ડ્રગ્‍સ માફિયાઓને ભરી પીવા AI આધારીત NARIT સોફટવેર સાથે મેદાને જંગમાં
-                        ઉતરનાર ગુજરાત દેશનું પ્રથમ રાજ્‍ય છેઃ જ્ઞાનેન્‍દ્રસિંહ મલ્લિક</h6>
-                </div>
-
-            </div>
+        </div>
     </section>
-
-
 
     <!-- Ad Banner -->
     <div class="content-box my-5">
-        <div class="bg-light border border-2 border-dashed rounded d-flex align-items-center justify-content-center fw-bold text-secondary"
+        <div class="ak-ad-box bg-light border border-2 border-dashed rounded d-flex align-items-center justify-content-center fw-bold text-secondary"
             style="height: 7.5rem; border-color: #adb5bd !important;">
             BANNER AD
         </div>
     </div>
-
     <!-- રાજકોટ સમાચાર -->
-    <section class="py-5 rajkot-section" style="background-color:#fff7ed;">
+    <section class="py-5 rajkot-section ak-white-news-section">
         <div class="content-box">
 
             <!-- Header -->
-            <div class="d-flex justify-content-between align-items-center border-bottom border-2 pb-2 mb-4"
-                style="border-color:#ea580c!important;">
-                <h2 class="fw-black m-0" style="font-size:1.5rem;color:#ea580c;">
-                    રાજકોટ સમાચાર
-                </h2>
+            <div class="ak-rajkot-title-block">
+                <div class="d-flex justify-content-between align-items-center ak-rajkot-title-row">
+                    <h2 class="fw-black m-0 ak-rajkot-title">
+                        રાજકોટ સમાચાર
+                    </h2>
 
-                <a href="#" class="text-decoration-none fw-bold text-secondary small">
-                    બધા જુઓ <i class="fas fa-arrow-right"></i>
-                </a>
+                    <a href="#" class="text-decoration-none fw-bold text-secondary small">
+                        બધા જુઓ <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="ak-rajkot-double-dot-line"></div>
             </div>
 
             <div class="row g-4">
@@ -1235,13 +2884,13 @@
                 <div class="col-lg-6">
 
                     <!-- Main News -->
-                    <article class="bg-white border overflow-hidden mb-4">
-                        <img src="image/rj.jpg" class="w-100" style="height: 250px; object-fit: cover;">
+                    <article class="ak-rajkot-main-news overflow-hidden">
+                        <img src="image/rj.jpg" class="w-100" alt="">
 
-                        <div class="p-3">
+                        <div class="ak-rajkot-main-news-content">
                             <h3 class="mb-2 fw-bold" style="font-size:1.1rem; line-height:1.5;">
-                                શિવાજીનગરમાં ફોટોફ્રેમના ધંધાના ખારમાં હુમલામાં ઘાયલ ગોપાલ જાદવનું મોતઃ બનાવ હત્‍યામાં
-                                પરિણમ્‍યો
+                                શિવાજીનગરમાં ફોટોફ્રેમના ધંધાના ખારમાં હુમલામાં ઘાયલ ગોપાલ જાદવનું મોતઃ બનાવ
+                                હત્‍યામાં પરિણમ્‍યો
                             </h3>
 
                             <span class="text-secondary small">
@@ -1250,38 +2899,43 @@
                         </div>
                     </article>
 
+                    <!-- Dotted line under main news -->
+                    <div class="ak-rajkot-main-dot-line"></div>
+
                     <!-- 4 Image News -->
                     <div class="row g-3">
 
                         <div class="col-6">
-                            <article class="bg-white border h-100 overflow-hidden">
-                                <img src="image/dodh.jpg" class="w-100" style="height: 130px; object-fit: cover;">
+                            <article class="ak-rajkot-small-card h-100 overflow-hidden">
+                                <img src="image/dodh.jpg" class="w-100" alt="">
 
-                                <div class="p-2">
+                                <div class="ak-rajkot-small-card-content">
                                     <h6 class="mb-0 fw-semibold" style="font-size:.9rem; line-height:1.4;">
-                                        બૌધીસત્‍વ આંબેડકર બૌધ્‍ધ વિહાર ખાતે સોમવારે ધમ્‍મચક્ર પ્રવર્તન દિન ઉજવાશે
+                                        બૌધીસત્‍વ આંબેડકર બૌધ્‍ધ વિહાર ખાતે સોમવારે ધમ્‍મચક્ર પ્રવર્તન દિન
+                                        ઉજવાશે
                                     </h6>
                                 </div>
                             </article>
                         </div>
 
                         <div class="col-6">
-                            <article class="bg-white border h-100 overflow-hidden">
-                                <img src="image/chori.jpg" class="w-100" style="height: 130px; object-fit: cover;">
-                                <div class="p-2">
+                            <article class="ak-rajkot-small-card h-100 overflow-hidden">
+                                <img src="image/chori.jpg" class="w-100" alt="">
+
+                                <div class="ak-rajkot-small-card-content">
                                     <h6 class="mb-0 fw-semibold" style="font-size:.9rem; line-height:1.4;">
-                                        સ્‍કાયલાઇન પ્રોજેક્‍ટની સાઇટ પરથી રૂપિયા ૧૦.૧૧ લાખની એલ્‍યુમિનિયમ પ્‍લેટ્‍સની
-                                        ચોરી
+                                        સ્‍કાયલાઇન પ્રોજેક્‍ટની સાઇટ પરથી રૂપિયા ૧૦.૧૧ લાખની એલ્‍યુમિનિયમ
+                                        પ્‍લેટ્‍સની ચોરી
                                     </h6>
                                 </div>
                             </article>
                         </div>
 
                         <div class="col-6">
-                            <article class="bg-white border h-100 overflow-hidden">
-                                <img src="image/modi2.png" class="w-100" style="height: 130px; object-fit: cover;">
+                            <article class="ak-rajkot-small-card h-100 overflow-hidden">
+                                <img src="image/modi2.png" class="w-100" alt="">
 
-                                <div class="p-2">
+                                <div class="ak-rajkot-small-card-content">
                                     <h6 class="mb-0 fw-semibold" style="font-size:.9rem; line-height:1.4;">
                                         રાજકોટ ખાતે કાલે નરેન્‍દ્રભાઇ મોદી વિચાર મંચનું અધિવેશન યોજાશે
                                     </h6>
@@ -1290,10 +2944,10 @@
                         </div>
 
                         <div class="col-6">
-                            <article class="bg-white border h-100 overflow-hidden">
-                                <img src="image/ai2.jpg" class="w-100" style="height: 130px; object-fit: cover;">
+                            <article class="ak-rajkot-small-card h-100 overflow-hidden">
+                                <img src="image/ai2.jpg" class="w-100" alt="">
 
-                                <div class="p-2">
+                                <div class="ak-rajkot-small-card-content">
                                     <h6 class="mb-0 fw-semibold" style="font-size:.9rem; line-height:1.4;">
                                         મુખ્ય રસ્તાઓ પર ટ્રાફિક નિયમન માટે નવી ટીમ તૈનાત
                                     </h6>
@@ -1308,219 +2962,182 @@
                 <!-- RIGHT COLUMN -->
                 <div class="col-lg-6">
 
-                    <div class="bg-white border h-100">
+                    <div class="ak-rajkot-short-news-box">
 
-                        <div class="px-3 py-3 border-bottom">
-                            <h6 class="mb-0 fw-semibold" style="line-height:1.5;">
+                        <div class="ak-rajkot-short-news-list">
+
+                            <a href="#" class="ak-rajkot-short-news-link">
                                 રાજકોટમાં નવા ફ્લાયઓવર પ્રોજેક્ટને મંજૂરી
-                            </h6>
-                        </div>
+                            </a>
 
-                        <div class="px-3 py-3 border-bottom">
-                            <h6 class="mb-0 fw-semibold" style="line-height:1.5;">
+                            <a href="#" class="ak-rajkot-short-news-link">
                                 શહેરના વિવિધ વિસ્તારોમાં વરસાદી પાણીની નવી ડ્રેનેજ યોજના
-                            </h6>
-                        </div>
+                            </a>
 
-                        <div class="px-3 py-3 border-bottom">
-                            <h6 class="mb-0 fw-semibold" style="line-height:1.5;">
+                            <a href="#" class="ak-rajkot-short-news-link">
                                 રાજકોટ એરપોર્ટ પર મુસાફરોની સંખ્યામાં નોંધપાત્ર વધારો
-                            </h6>
-                        </div>
+                            </a>
 
-                        <!-- AD SECTION -->
-                        <div class="p-3 border-bottom">
-                            <div class="bg-light border d-flex align-items-center justify-content-center"
-                                style="height:120px;">
-                                <div class="text-center">
-                                    <small class="text-muted d-block mb-1">AD</small>
+                            <!-- AD SECTION -->
+                            <div class="ak-rajkot-ad-wrap">
+                                <div class="ak-rajkot-ad-box">
+                                    <div class="text-center">
+                                        <small class="text-muted d-block mb-1">AD</small>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="px-3 py-3 border-bottom">
-                            <h6 class="mb-0 fw-semibold" style="line-height:1.5;">
+                            <a href="#" class="ak-rajkot-short-news-link">
                                 રાજકોટમાં સ્ટાર્ટઅપ સમિટનું આયોજન, યુવાનોમાં ઉત્સાહ
-                            </h6>
-                        </div>
+                            </a>
 
-                        <div class="px-3 py-3 border-bottom">
-                            <h6 class="mb-0 fw-semibold" style="line-height:1.5;">
+                            <a href="#" class="ak-rajkot-short-news-link">
                                 શહેરના મુખ્ય બજારોમાં તહેવાર પૂર્વે ખરીદીનો માહોલ
-                            </h6>
-                        </div>
+                            </a>
 
-                        <div class="px-3 py-3 border-bottom">
-                            <h6 class="mb-0 fw-semibold" style="line-height:1.5;">
+                            <a href="#" class="ak-rajkot-short-news-link">
                                 રાજકોટમાં નવી BRTS રૂટની જાહેરાત
-                            </h6>
-                        </div>
+                            </a>
 
-                        <div class="px-3 py-3 border-bottom">
-                            <h6 class="mb-0 fw-semibold" style="line-height:1.5;">
+                            <a href="#" class="ak-rajkot-short-news-link">
                                 યુનિવર્સિટી કેમ્પસમાં નવી સંશોધન લેબ શરૂ
-                            </h6>
-                        </div>
+                            </a>
 
-                        <div class="px-3 py-3 border-bottom">
-                            <h6 class="mb-0 fw-semibold" style="line-height:1.5;">
+                            <a href="#" class="ak-rajkot-short-news-link">
                                 શહેરમાં વૃક્ષારોપણ અભિયાનને લોકોનો સારો પ્રતિસાદ
-                            </h6>
-                        </div>
+                            </a>
 
-                        <div class="px-3 py-3 border-bottom">
-                            <h6 class="mb-0 fw-semibold" style="line-height:1.5;">
+                            <a href="#" class="ak-rajkot-short-news-link">
                                 રાજકોટના વેપારીઓ માટે નવી ડિજિટલ સેવાઓ લોન્ચ
-                            </h6>
-                        </div>
+                            </a>
 
-                        <div class="px-3 py-3 border-bottom">
-                            <h6 class="mb-0 fw-semibold" style="line-height:1.5;">
+                            <a href="#" class="ak-rajkot-short-news-link">
                                 નવા રમતગમત કોમ્પ્લેક્સના નિર્માણને ગતિ
-                            </h6>
-                        </div>
+                            </a>
 
-                        <div class="px-3 py-3">
-                            <h6 class="mb-0 fw-semibold" style="line-height:1.5;">
+                            <a href="#" class="ak-rajkot-short-news-link">
                                 રાજકોટમાં પર્યાવરણ જાગૃતિ અભિયાનનો પ્રારંભ
-                            </h6>
+                            </a>
+
                         </div>
 
                     </div>
 
                 </div>
+
+            </div>
+
+        </div>
     </section>
+
 
     <!-- =========================
      સૌરાષ્ટ્ર કચ્છ SECTION
 ========================= -->
-
-    <section class="py-5" style="background:#f5f7fb;">
+    <section class="bg-white py-5 ak-saurashtra-section">
         <div class="content-box">
 
-            <!-- Main Container -->
-            <div class="bg-white border p-4" style="border-radius:6px;">
-
-                <!-- Header -->
-                <div class="d-flex justify-content-between align-items-center border-bottom pb-3 mb-4">
-                    <h2 class="fw-black m-0" style="font-size:1.5rem;color:#ea580c;">
+            <!-- Section Header -->
+            <div class="ak-saurashtra-title-block">
+                <div class="d-flex justify-content-between align-items-center ak-saurashtra-section-header">
+                    <h2 class="fw-black m-0 ak-saurashtra-title">
                         સૌરાષ્ટ્ર કચ્છ
                     </h2>
 
                     <a href="#" class="text-decoration-none fw-bold text-secondary small">
-                        બધા જુઓ →
+                        બધા જુઓ <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
 
-                <!-- Top Cards -->
-                <div class="row g-4 mb-4">
+                <div class="ak-saurashtra-double-dot-line"></div>
+            </div>
 
-                    <!-- Card 1 -->
-                    <div class="col-lg-4">
-                        <article class="border h-100 bg-white overflow-hidden" style="border-radius:4px;">
+            <!-- Top 3 News With Images -->
+            <div class="row g-4">
 
-                            <img src="image/vande.jfif" alt="" class="img-fluid w-100"
-                                style="min-height: 200px; max-height:200px; object-fit: cover;">
+                <div class="col-lg-4 col-md-4">
+                    <img src="image/vande.jfif" class="ak-saurashtra-main-img" alt="">
 
-                            <div class="p-3">
-                                <h6 class="fw-bold mb-0 lh-base">
-                                    જૂનાગઢમાં વંદે ભારત ટ્રેનનું સ્વાગત
-                                </h6>
-                            </div>
+                    <h5 class="fw-bold">
+                        જૂનાગઢમાં વંદે ભારત ટ્રેનનું સ્વાગત
+                    </h5>
 
-                        </article>
-                    </div>
-
-                    <!-- Card 2 -->
-                    <div class="col-lg-4">
-                        <article class="border h-100 bg-white overflow-hidden" style="border-radius:6px;">
-
-                             <img src="image/buj.jpg" alt="" class="img-fluid w-100"
-                                style="min-height: 200px; max-height:200px; object-fit: cover;">
-
-
-                            <div class="p-3">
-                                <h6 class="fw-bold mb-0 lh-base">
-                                    ભુજમાં નવો હેરિટેજ મ્યુઝિયમનું ઉદ્ઘાટન
-                                </h6>
-                            </div>
-
-                        </article>
-                    </div>
-
-                    <!-- Card 3 -->
-                    <div class="col-lg-4">
-                        <article class="border h-100 bg-white overflow-hidden" style="border-radius:6px;">
-
-                            <img src="image/jivan.jfif" alt="" class="img-fluid w-100"
-                                style="min-height: 200px; max-height:200px; object-fit: cover;">
-
-                            <div class="p-3">
-                                <h6 class="fw-bold mb-0 lh-base">
-                                    પોરબંદરમાં જીવનજળ યોજનાનો વિસ્તરણ
-                                </h6>
-                            </div>
-
-                        </article>
-                    </div>
-
+                    <p class="text-secondary small mb-0">
+                        આધુનિક રેલ વ્યવસ્થાના નવા અધ્યાય સાથે સૌરાષ્ટ્રના મુસાફરોમાં ઉત્સાહ: સ્ટેશન પર લોકોનો
+                        ભારે
+                        ઉમટો...
+                    </p>
                 </div>
 
-                <!-- Bottom Headlines -->
-                <div class="border overflow-hidden" style="border-radius:4px;">
+                <div class="col-lg-4 col-md-4">
+                    <img src="image/buj.jpg" class="ak-saurashtra-main-img" alt="">
 
-                    <div class="row g-0">
+                    <h5 class="fw-bold">
+                        ભુજમાં નવો હેરિટેજ મ્યુઝિયમનું ઉદ્ઘાટન
+                    </h5>
 
-                        <div class="col-lg-4 col-md-6 border-end border-bottom">
-                            <div class="p-3">
-                                <h6 class="fw-bold mb-0 lh-base">
-                                    રાજકોટમાં નવા BRTS રૂટ માટે સર્વે શરૂ
-                                </h6>
-                            </div>
-                        </div>
+                    <p class="text-secondary small mb-0">
+                        કચ્છની સંસ્કૃતિ અને ઈતિહાસને પ્રદર્શિત કરતું મ્યુઝિયમ પ્રવાસન માટે નવું આકર્ષણ બનશે...
+                    </p>
+                </div>
 
-                        <div class="col-lg-4 col-md-6 border-end border-bottom">
-                            <div class="p-3">
-                                <h6 class="fw-bold mb-0 lh-base">
-                                    જામનગરમાં નવા એરપોર્ટ ટર્મિનલની તૈયારી
-                                </h6>
-                            </div>
-                        </div>
+                <div class="col-lg-4 col-md-4">
+                    <img src="image/jivan.jfif" class="ak-saurashtra-main-img" alt="">
 
-                        <div class="col-lg-4 col-md-6 border-bottom">
-                            <div class="p-3">
-                                <h6 class="fw-bold mb-0 lh-base">
-                                    ગીર વિસ્તારમાં પર્યટનને પ્રોત્સાહન
-                                </h6>
-                            </div>
-                        </div>
+                    <h5 class="fw-bold">
+                        પોરબંદરમાં જીવનજળ યોજનાનો વિસ્તરણ
+                    </h5>
 
-                        <div class="col-lg-4 col-md-6 border-end">
-                            <div class="p-3">
-                                <h6 class="fw-bold mb-0 lh-base">
-                                    ભાવનગર બંદરે માલસામાનની હેરફેરમાં વધારો
-                                </h6>
-                            </div>
-                        </div>
+                    <p class="text-secondary small mb-0">
+                        ગ્રામ્ય વિસ્તારોમાં શુદ્ધ પાણી પહોંચાડવા નવી લાઈન અને સ્ટોરેજ સુવિધાઓનો વિકાસ શરૂ...
+                    </p>
+                </div>
 
-                        <div class="col-lg-4 col-md-6 border-end">
-                            <div class="p-3">
-                                <h6 class="fw-bold mb-0 lh-base">
-                                    મોરબીમાં નવા હાઉસિંગ પ્રોજેક્ટને મંજૂરી
-                                </h6>
-                            </div>
-                        </div>
+            </div>
 
-                        <div class="col-lg-4 col-md-6">
-                            <div class="p-3">
-                                <h6 class="fw-bold mb-0 lh-base">
-                                    કચ્છમાં નવા સોલાર પ્રોજેક્ટની શરૂઆત
-                                </h6>
-                            </div>
-                        </div>
+            <!-- Dotted Headline List -->
+            <div class="ak-saurashtra-headline-grid">
 
-                    </div>
+                <div class="ak-saurashtra-headline-col">
+                    <a href="#" class="ak-saurashtra-headline-link">
+                        રાજકોટમાં નવા BRTS રૂટ માટે સર્વે શરૂ
+                    </a>
 
+                    <a href="#" class="ak-saurashtra-headline-link">
+                        જામનગરમાં નવા એરપોર્ટ ટર્મિનલની તૈયારી
+                    </a>
+
+                    <a href="#" class="ak-saurashtra-headline-link">
+                        ગીર વિસ્તારમાં પર્યટનને પ્રોત્સાહન
+                    </a>
+                </div>
+
+                <div class="ak-saurashtra-headline-col">
+                    <a href="#" class="ak-saurashtra-headline-link">
+                        ભાવનગર બંદરે માલસામાનની હેરફેરમાં વધારો
+                    </a>
+
+                    <a href="#" class="ak-saurashtra-headline-link">
+                        મોરબીમાં નવા હાઉસિંગ પ્રોજેક્ટને મંજૂરી
+                    </a>
+
+                    <a href="#" class="ak-saurashtra-headline-link">
+                        કચ્છમાં નવા સોલાર પ્રોજેક્ટની શરૂઆત
+                    </a>
+                </div>
+
+                <div class="ak-saurashtra-headline-col">
+                    <a href="#" class="ak-saurashtra-headline-link">
+                        દ્વારકામાં પ્રવાસન સુવિધાઓને વિસ્તૃત કરવાનું આયોજન
+                    </a>
+
+                    <a href="#" class="ak-saurashtra-headline-link">
+                        પોરબંદરમાં જીવનજળ યોજનાનો વિસ્તરણ
+                    </a>
+
+                    <a href="#" class="ak-saurashtra-headline-link">
+                        ભુજમાં નવો હેરિટેજ મ્યુઝિયમનું ઉદ્ઘાટન
+                    </a>
                 </div>
 
             </div>
@@ -1528,128 +3145,189 @@
         </div>
     </section>
 
-
-    <style>
-        #saurashtraSlider .btn-outline-success {
-            width: 34px;
-            height: 34px;
-            padding: 0;
-            border-radius: 0%;
-        }
-
-        #saurashtraSlider .carousel-item {
-            padding: 5px 0;
-        }
-
-        #saurashtraSlider article {
-            transition: all .3s ease;
-        }
-
-        #saurashtraSlider article:hover {
-            transform: translateY(-3px);
-        }
-
-        #saurashtraSlider h6 {
-            line-height: 1.5;
-            margin-bottom: 4px;
-        }
-
-        @media (max-width:768px) {
-            #saurashtraSlider .col-md-4 {
-                margin-bottom: 15px;
-            }
-        }
-    </style>
-
     <!-- દેશ વિદેશ -->
-    <section class="py-5" style="background-color: #eef2ff;">
+    <section class="py-5 ak-desh-section ak-white-news-section">
         <div class="content-box">
-            <div class="d-flex justify-content-between align-items-center border-bottom border-2 pb-2 mb-4"
-                style="border-color: #4338ca !important;">
-                <h2 class="fw-black text-uppercase m-0" style="font-size: 1.5rem; color: #4338ca;">દેશ વિદેશ</h2>
-                <a href="#" class="text-decoration-none fw-bold text-secondary small">બધા જુઓ <i
-                        class="fas fa-arrow-right"></i></a>
+
+            <!-- Header -->
+            <div class="ak-section-title-block">
+                <div class="d-flex justify-content-between align-items-center ak-section-title-row">
+                    <h2 class="fw-black text-uppercase m-0" style="font-size: 1.5rem; color: #4338ca;">
+                        દેશ વિદેશ
+                    </h2>
+
+                    <a href="#" class="text-decoration-none fw-bold text-secondary small">
+                        બધા જુઓ <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="ak-double-dot-line"></div>
             </div>
-            <article class="ak-desh-feature bg-white border mb-4">
-                <div class="p-4 d-flex flex-column justify-content-center">
-                    <span class="text-primary fw-bold small text-uppercase mb-2">ટોપ અપડેટ</span>
-                    <h3 class="fw-bold mb-2" style="font-size: 1.25rem; line-height: 1.45;">અમેરિકા-ઈરાન ફરી બાખડયાઃ
-                        સામસામા હુમલા</h3>
-                    <p class="text-secondary small mb-3">હોર્મુઝમાં કાર્ગો શિપ ઉપર હુમલો થતાં ટ્રમ્‍પ ભડક્‍યાઃ ઈરાનના
-                        મિસાઈલ-ડ્રોન સાઈટ ઉપર કરી એરસ્‍ટ્રાઈક : અસ્‍થાયી શાંતિ સમજુતી છતાં પણ ઈરાને હોર્મુઝમાં ૪ ડ્રોન
-                        એટેક કરતાં સ્‍થિતિ વણસીઃ ઈરાને નવેસરથી અમેરિકી ઠેકાણાઓને નિશાના પર લીધા</p>
-                    <span class="text-secondary small">તાજેતરનું અપડેટ</span>
+
+            <!-- Three Main News Row -->
+            <div class="row g-4 ak-desh-main-row">
+
+                <div class="col-lg-4 col-md-6">
+                    <article class="ak-desh-main-card h-100">
+                        <img src="image/dv1.jpg" alt="" class="ak-desh-main-img">
+
+                        <div class="ak-desh-main-content">
+                            <span class="text-primary fw-bold small text-uppercase mb-2 d-inline-block">
+                                ટોપ અપડેટ
+                            </span>
+
+                            <h3 class="fw-bold mb-2" style="font-size: 1.2rem; line-height: 1.45;">
+                                અમેરિકા-ઈરાન ફરી બાખડયાઃ સામસામા હુમલા
+                            </h3>
+
+                            <p class="text-secondary small mb-2">
+                                હોર્મુઝમાં કાર્ગો શિપ ઉપર હુમલો થતાં ટ્રમ્‍પ ભડક્‍યાઃ ઈરાનના મિસાઈલ-ડ્રોન સાઈટ
+                                ઉપર કરી
+                                એરસ્‍ટ્રાઈક...
+                            </p>
+
+                            <span class="text-secondary small">તાજેતરનું અપડેટ</span>
+                        </div>
+                    </article>
                 </div>
-                <div class="img-placeholder">
-                    <img src="image/dv1.jpg" alt="" class="img-fluid w-100 h-100">
+
+                <div class="col-lg-4 col-md-6">
+                    <article class="ak-desh-main-card h-100">
+                        <img src="image/dv3.jpg" alt="" class="ak-desh-main-img">
+
+                        <div class="ak-desh-main-content">
+                            <span class="text-primary fw-bold small text-uppercase mb-2 d-inline-block">
+                                વિશ્વ સમાચાર
+                            </span>
+
+                            <h3 class="fw-bold mb-2" style="font-size: 1.2rem; line-height: 1.45;">
+                                ભારત પ્રવાસે આવશે અમેરિકી રાષ્ટ્રપતિ ડોનાલ્ડ ટ્રમ્પ
+                            </h3>
+
+                            <p class="text-secondary small mb-2">
+                                દ્વિપક્ષીય વ્યાપારી અને વ્યૂહાત્મક સંબંધોના નવા સુવર્ણ યુગ વચ્ચે મહત્વપૂર્ણ
+                                બેઠકનું આયોજન...
+                            </p>
+
+                            <span class="text-secondary small">તાજેતરનું અપડેટ</span>
+                        </div>
+                    </article>
                 </div>
-            </article>
+
+                <div class="col-lg-4 col-md-6">
+                    <article class="ak-desh-main-card h-100">
+                        <img src="image/dv2.jpg" alt="" class="ak-desh-main-img">
+
+                        <div class="ak-desh-main-content">
+                            <span class="text-primary fw-bold small text-uppercase mb-2 d-inline-block">
+                                આંતરરાષ્ટ્રીય
+                            </span>
+
+                            <h3 class="fw-bold mb-2" style="font-size: 1.2rem; line-height: 1.45;">
+                                મધ્ય પૂર્વમાં તણાવ વચ્ચે વૈશ્વિક બજારોમાં હલચલ
+                            </h3>
+
+                            <p class="text-secondary small mb-2">
+                                ક્રૂડ ઓઇલના ભાવ અને હવાઈ માર્ગો પર અસર થવાની શક્યતા વચ્ચે વિવિધ દેશો એલર્ટ
+                                મોડમાં...
+                            </p>
+
+                            <span class="text-secondary small">તાજેતરનું અપડેટ</span>
+                        </div>
+                    </article>
+                </div>
+
+            </div>
+
+            <!-- Dotted Separator -->
+            <div class="ak-desh-main-separator"></div>
+
+            <!-- Small News Grid -->
             <div class="ak-desh-small-grid">
+
                 <article class="ak-horizontal-news">
                     <div class="img-placeholder">
                         <img src="image/dv2.jpg" alt="" class="img-fluid w-100 h-100">
                     </div>
+
                     <div class="flex-grow-1">
-                        <h3 class="fw-bold mb-1" style="font-size: 0.98rem; line-height: 1.45;">અમેરિકા અને ઈરાન વચ્ચેના
-                            સૈન્ય પ્રહારોથી મધ્ય પૂર્વમાં ફરી...</h3>
-                        <p class="text-secondary small mb-0">500 થી વધુ Gujarati students સન્માનિત.</p>
+                        <h3 class="fw-bold mb-1" style="font-size: 0.98rem; line-height: 1.45;">
+                            અમેરિકા અને ઈરાન વચ્ચેના સૈન્ય પ્રહારોથી મધ્ય પૂર્વમાં ફરી...
+                        </h3>
+                        <p class="text-secondary small mb-0">
+                            500 થી વધુ Gujarati students સન્માનિત.
+                        </p>
                     </div>
                 </article>
+
                 <article class="ak-horizontal-news">
                     <div class="img-placeholder">
                         <img src="image/dv3.jpg" alt="" class="img-fluid w-100 h-100">
                     </div>
+
                     <div class="flex-grow-1">
-                        <h3 class="fw-bold mb-1" style="font-size: 0.98rem; line-height: 1.45;">ભારત પ્રવાસે આવશે
-                            અમેરિકી રાષ્ટ્રપતિ ડોનાલ્ડ ટ્રમ્પ...</h3>
-                        <p class="text-secondary small mb-0">પ્રવાસીઓ માટે મહત્વપૂર્ણ માર્ગદર્શિકા.</p>
+                        <h3 class="fw-bold mb-1" style="font-size: 0.98rem; line-height: 1.45;">
+                            પ્રવાસીઓ માટે મહત્વપૂર્ણ માર્ગદર્શિકા જાહેર...
+                        </h3>
+                        <p class="text-secondary small mb-0">
+                            વિદેશ યાત્રા માટે નવા નિયમો જાહેર.
+                        </p>
                     </div>
                 </article>
+
                 <article class="ak-horizontal-news">
                     <div class="img-placeholder">
                         <img src="image/dv2.jpg" alt="" class="img-fluid w-100 h-100">
                     </div>
+
                     <div class="flex-grow-1">
-                        <h3 class="fw-bold mb-1" style="font-size: 0.98rem; line-height: 1.45;">અમેરિકા અને ઈરાન વચ્ચેના
-                            સૈન્ય પ્રહારોથી મધ્ય પૂર્વમાં ફરી...</h3>
-                        <p class="text-secondary small mb-0">આયાત-નિકાસ સેક્ટરમાં નવી આશા.</p>
+                        <h3 class="fw-bold mb-1" style="font-size: 0.98rem; line-height: 1.45;">
+                            વૈશ્વિક બજારમાં આયાત-નિકાસ સેક્ટરમાં નવી આશા...
+                        </h3>
+                        <p class="text-secondary small mb-0">
+                            આયાત-નિકાસ સેક્ટરમાં નવી આશા.
+                        </p>
                     </div>
                 </article>
+
             </div>
+
         </div>
     </section>
     <!-- Ad Banner Mid -->
     <div class="content-box my-5">
-        <div class="bg-light border border-2 border-dashed rounded d-flex align-items-center justify-content-center fw-bold text-secondary"
+        <div class="ak-ad-box bg-light border border-2 border-dashed rounded d-flex align-items-center justify-content-center fw-bold text-secondary"
             style="height: 7.5rem; border-color: #adb5bd !important;">
             BANNER AD
         </div>
     </div>
-
-
     <!-- ------ફિલ્મ જગત  -->
-    <section class="py-5 bg-white border-top">
+    <section class="py-5 bg-white ak-film-section">
         <div class="content-box">
 
             <!-- Header -->
-            <div class="d-flex justify-content-between align-items-center border-bottom border-2 pb-2 mb-4">
-                <h2 class="fw-black text-uppercase m-0" style="font-size:1.5rem;color:#db2777;">
-                    ફિલ્મ જગત
-                </h2>
-                <a href="#" class="text-decoration-none fw-bold text-secondary small">
-                    બધા જુઓ <i class="fas fa-arrow-right"></i>
-                </a>
+            <div class="ak-section-title-block">
+                <div class="d-flex justify-content-between align-items-center ak-section-title-row">
+                    <h2 class="fw-black text-uppercase m-0 ak-film-title">
+                        ફિલ્મ જગત
+                    </h2>
+
+                    <a href="#" class="text-decoration-none fw-bold text-secondary small">
+                        બધા જુઓ <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="ak-double-dot-line"></div>
             </div>
 
             <!-- News Grid -->
-            <div class="row g-4">
+            <div class="row g-4 ak-film-grid">
 
                 <!-- Card 1 -->
-                <div class="col-lg-4 col-md-6">
-                    <article class="d-flex flex-row-reverse border rounded-3 overflow-hidden bg-white h-100">
-                        <img src="image/fj1.jpg" class="flex-shrink-0"
-                            style="width: 120px; max-height: 120px; object-fit: cover;">
-                        <div class="p-3 flex-grow-1">
+                <div class="col-lg-4 col-md-6 ak-film-item">
+                    <article class="ak-film-card">
+                        <img src="image/fj1.jpg" class="flex-shrink-0 ak-film-img" alt="">
+                        <div class="p-0 flex-grow-1 ak-film-content">
                             <h6 class="fw-bold mb-2 lh-base">
                                 Shah Rukh Khanની નવી ફિલ્મ 1000 કરોડ ક્લબમાં
                             </h6>
@@ -1659,11 +3337,10 @@
                 </div>
 
                 <!-- Card 2 -->
-                <div class="col-lg-4 col-md-6">
-                    <article class="d-flex flex-row-reverse border rounded-3 overflow-hidden bg-white h-100">
-                        <img src="image/fj2.jpg" class="flex-shrink-0"
-                            style="width: 120px; max-height: 120px; object-fit: cover;">
-                        <div class="p-3 flex-grow-1">
+                <div class="col-lg-4 col-md-6 ak-film-item">
+                    <article class="ak-film-card">
+                        <img src="image/fj2.jpg" class="flex-shrink-0 ak-film-img" alt="">
+                        <div class="p-0 flex-grow-1 ak-film-content">
                             <h6 class="fw-bold mb-2 lh-base">
                                 Gujarati Cinema: નવા ટ્રેન્ડ અને નવા ચહેરા
                             </h6>
@@ -1673,11 +3350,10 @@
                 </div>
 
                 <!-- Card 3 -->
-                <div class="col-lg-4 col-md-6">
-                    <article class="d-flex flex-row-reverse border rounded-3 overflow-hidden bg-white h-100">
-                        <img src="image/fj3.jpg" class="flex-shrink-0"
-                            style="width: 120px; max-height: 120px; object-fit: cover;">
-                        <div class="p-3 flex-grow-1">
+                <div class="col-lg-4 col-md-6 ak-film-item">
+                    <article class="ak-film-card">
+                        <img src="image/fj3.jpg" class="flex-shrink-0 ak-film-img" alt="">
+                        <div class="p-0 flex-grow-1 ak-film-content">
                             <h6 class="fw-bold mb-2 lh-base">
                                 Oscar 2024: ભારતની ઓફિશિયલ એન્ટ્રી જાહેર
                             </h6>
@@ -1687,11 +3363,10 @@
                 </div>
 
                 <!-- Card 4 -->
-                <div class="col-lg-4 col-md-6">
-                    <article class="d-flex flex-row-reverse border rounded-3 overflow-hidden bg-white h-100">
-                        <img src="image/fj4.jpg" class="flex-shrink-0"
-                            style="width: 120px; max-height: 120px; object-fit: cover;">
-                        <div class="p-3 flex-grow-1">
+                <div class="col-lg-4 col-md-6 ak-film-item">
+                    <article class="ak-film-card">
+                        <img src="image/fj4.jpg" class="flex-shrink-0 ak-film-img" alt="">
+                        <div class="p-0 flex-grow-1 ak-film-content">
                             <h6 class="fw-bold mb-2 lh-base">
                                 Bollywood: આ વીકેન્ડ રિલીઝ થશે 3 મોટી ફિલ્મો
                             </h6>
@@ -1701,11 +3376,10 @@
                 </div>
 
                 <!-- Card 5 -->
-                <div class="col-lg-4 col-md-6">
-                    <article class="d-flex flex-row-reverse border rounded-3 overflow-hidden bg-white h-100">
-                        <img src="image/fj1.jpg" class="flex-shrink-0"
-                            style="width: 120px; max-height: 120px; object-fit: cover;">
-                        <div class="p-3 flex-grow-1">
+                <div class="col-lg-4 col-md-6 ak-film-item">
+                    <article class="ak-film-card">
+                        <img src="image/fj1.jpg" class="flex-shrink-0 ak-film-img" alt="">
+                        <div class="p-0 flex-grow-1 ak-film-content">
                             <h6 class="fw-bold mb-2 lh-base">
                                 OTT પર નવી ગુજરાતી વેબ સિરીઝનું પ્રીમિયર
                             </h6>
@@ -1715,11 +3389,10 @@
                 </div>
 
                 <!-- Card 6 -->
-                <div class="col-lg-4 col-md-6">
-                    <article class="d-flex flex-row-reverse border rounded-3 overflow-hidden bg-white h-100">
-                        <img src="image/fj3.jpg" class="flex-shrink-0"
-                            style="width: 120px; max-height: 120px; object-fit: cover;">
-                        <div class="p-3 flex-grow-1">
+                <div class="col-lg-4 col-md-6 ak-film-item">
+                    <article class="ak-film-card">
+                        <img src="image/fj3.jpg" class="flex-shrink-0 ak-film-img" alt="">
+                        <div class="p-0 flex-grow-1 ak-film-content">
                             <h6 class="fw-bold mb-2 lh-base">
                                 દક્ષિણ ભારતીય ફિલ્મે બોક્સ ઓફિસ પર ધૂમ મચાવી
                             </h6>
@@ -1731,38 +3404,36 @@
             </div>
         </div>
     </section>
-
-    <!-- =========================
-     સ્પોર્ટ્સ
-========================= -->
-    <section class="py-5 border-top" style="background:#f0fdf4;">
+    <!-- --------------સ્પોર્ટ્સ ----------- -->
+    <section class="py-5 ak-sports-section ak-white-news-section">
         <div class="content-box">
 
             <!-- Header -->
-            <div class="d-flex justify-content-between align-items-center border-bottom border-2 pb-2 mb-4"
-                style="border-color:#16a34a!important;">
+            <div class="ak-sports-title-block">
+                <div class="d-flex justify-content-between align-items-center ak-sports-title-row">
+                    <h2 class="fw-black text-uppercase m-0 ak-sports-title">
+                        સ્પોર્ટ્સ
+                    </h2>
 
-                <h2 class="fw-black text-uppercase m-0" style="font-size:1.5rem;color:#16a34a;">
-                    સ્પોર્ટ્સ
-                </h2>
+                    <a href="#" class="text-decoration-none fw-bold text-secondary small">
+                        બધા જુઓ <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
 
-                <a href="#" class="text-decoration-none fw-bold text-secondary small">
-                    બધા જુઓ <i class="fas fa-arrow-right"></i>
-                </a>
-
+                <div class="ak-sports-double-dot-line"></div>
             </div>
 
             <!-- News Grid -->
-            <div class="row g-4">
+            <div class="row g-4 ak-sports-grid">
 
                 <!-- Card 1 -->
-                <div class="col-lg-4 col-md-6">
-                    <article class="d-flex flex-row-reverse border rounded-3 overflow-hidden bg-white h-100">
-                        <div class="img-placeholder flex-shrink-0" style="width:120px;min-height:120px;">
-                            તસ્વીર
+                <div class="col-lg-4 col-md-6 ak-sports-item">
+                    <article class="ak-sports-card">
+                        <div class="ak-sports-img-box">
+                            <img src="image/sport2.jpg" alt="">
                         </div>
 
-                        <div class="p-3 flex-grow-1">
+                        <div class="ak-sports-text p-0 flex-grow-1">
                             <h6 class="fw-bold mb-2 lh-base">
                                 અંતિમ ટેસ્ટમાં દમદાર બોલિંગ સાથે ભારતે સીરીઝ જીત મેળવી
                             </h6>
@@ -1775,13 +3446,13 @@
                 </div>
 
                 <!-- Card 2 -->
-                <div class="col-lg-4 col-md-6">
-                    <article class="d-flex flex-row-reverse border rounded-3 overflow-hidden bg-white h-100">
-                        <div class="img-placeholder flex-shrink-0" style="width:120px;min-height:120px;">
-                            તસ્વીર
+                <div class="col-lg-4 col-md-6 ak-sports-item">
+                    <article class="ak-sports-card">
+                        <div class="ak-sports-img-box">
+                            <img src="image/match.webp" alt="">
                         </div>
 
-                        <div class="p-3 flex-grow-1">
+                        <div class="ak-sports-text p-0 flex-grow-1">
                             <h6 class="fw-bold mb-2 lh-base">
                                 પ્રીમિયર લીગ: ટોપ ક્લબ્સ મહત્ત્વના પોઈંટ્સ માટે લડે છે
                             </h6>
@@ -1794,13 +3465,13 @@
                 </div>
 
                 <!-- Card 3 -->
-                <div class="col-lg-4 col-md-6">
-                    <article class="d-flex flex-row-reverse border rounded-3 overflow-hidden bg-white h-100">
-                        <div class="img-placeholder flex-shrink-0" style="width:120px;min-height:120px;">
-                            તસ્વીર
+                <div class="col-lg-4 col-md-6 ak-sports-item">
+                    <article class="ak-sports-card">
+                        <div class="ak-sports-img-box">
+                            <img src="image/sport1.jpg" alt="">
                         </div>
 
-                        <div class="p-3 flex-grow-1">
+                        <div class="ak-sports-text p-0 flex-grow-1">
                             <h6 class="fw-bold mb-2 lh-base">
                                 ગ્રાન્ડ સ્લેમ આશાવાહો ક્લે કોર્ટ માટે તૈયાર
                             </h6>
@@ -1813,60 +3484,143 @@
                 </div>
 
                 <!-- Card 4 -->
-                <div class="col-lg-4 col-md-6">
-                    <article class="d-flex flex-row-reverse border rounded-3 overflow-hidden bg-white h-100">
-                        <div class="img-placeholder flex-shrink-0" style="width:120px;min-height:120px;">
-                            તસ્વીર
+                <div class="col-lg-4 col-md-6 ak-sports-item">
+                    <article class="ak-sports-card">
+                        <div class="ak-sports-img-box">
+                            <img src="image/sport3.jpg" alt="">
                         </div>
 
-                        <div class="p-3 flex-grow-1">
+                        <div class="ak-sports-text p-0 flex-grow-1">
                             <h6 class="fw-bold mb-2 lh-base">
                                 IPLમાં ગુજરાત ટાઇટન્સની મહત્વની જીત
                             </h6>
 
                             <span class="text-secondary small">
-                                7 કલાક પહેલા
+                                6 કલાક પહેલા
                             </span>
                         </div>
                     </article>
                 </div>
 
                 <!-- Card 5 -->
-                <div class="col-lg-4 col-md-6">
-                    <article class="d-flex flex-row-reverse border rounded-3 overflow-hidden bg-white h-100">
-                        <div class="img-placeholder flex-shrink-0" style="width:120px;min-height:120px;">
-                            તસ્વીર
+                <div class="col-lg-4 col-md-6 ak-sports-item">
+                    <article class="ak-sports-card">
+                        <div class="ak-sports-img-box">
+                            <img src="image/sport2.jpg" alt="">
                         </div>
 
-                        <div class="p-3 flex-grow-1">
+                        <div class="ak-sports-text p-0 flex-grow-1">
                             <h6 class="fw-bold mb-2 lh-base">
                                 હોકી ટીમે એશિયન ચેમ્પિયનશિપમાં સ્થાન મેળવ્યું
                             </h6>
 
                             <span class="text-secondary small">
-                                8 કલાક પહેલા
+                                6 કલાક પહેલા
                             </span>
                         </div>
                     </article>
                 </div>
 
                 <!-- Card 6 -->
-                <div class="col-lg-4 col-md-6">
-                    <article class="d-flex flex-row-reverse border rounded-3 overflow-hidden bg-white h-100">
-                        <div class="img-placeholder flex-shrink-0" style="width:120px;min-height:120px;">
-                            તસ્વીર
+                <div class="col-lg-4 col-md-6 ak-sports-item">
+                    <article class="ak-sports-card">
+                        <div class="ak-sports-img-box">
+                            <img src="image/sport1.jpg" alt="">
                         </div>
 
-                        <div class="p-3 flex-grow-1">
+                        <div class="ak-sports-text p-0 flex-grow-1">
                             <h6 class="fw-bold mb-2 lh-base">
                                 બેડમિન્ટન સ્ટાર સેમિફાઇનલમાં પહોંચ્યો
                             </h6>
 
                             <span class="text-secondary small">
-                                9 કલાક પહેલા
+                                6 કલાક પહેલા
                             </span>
                         </div>
                     </article>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ફોટો ગેલેરી -->
+    <section class="py-5 ak-photo-gallery-section">
+        <div class="content-box">
+
+            <!-- Header -->
+            <div class="ak-photo-gallery-title-block">
+                <div class="d-flex justify-content-between align-items-center ak-photo-gallery-title-row">
+                    <h2 class="fw-black text-uppercase m-0 ak-photo-gallery-title">
+                        ફોટો ગેલેરી
+                    </h2>
+
+                    <a href="#" class="text-decoration-none fw-bold text-secondary small">
+                        બધા જુઓ <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="ak-photo-gallery-double-dot-line"></div>
+            </div>
+
+            <!-- Top Gallery Layout -->
+            <div class="row g-4">
+
+                <!-- Big Photo -->
+                <div class="col-lg-6">
+                    <a href="#" class="ak-gallery-card ak-gallery-large">
+                        <img src="image/mumbai.jpg" alt="">
+                        <span class="ak-gallery-date">29 જૂન 2026</span>
+                    </a>
+                </div>
+
+                <!-- Right 2 Photos -->
+                <div class="col-lg-6">
+                    <div class="ak-gallery-right-stack">
+                        <a href="#" class="ak-gallery-card ak-gallery-medium">
+                            <img src="image/ethenol.jpg" alt="">
+                            <span class="ak-gallery-date">28 જૂન 2026</span>
+                        </a>
+
+                        <a href="#" class="ak-gallery-card ak-gallery-medium">
+                            <img src="image/mumbai.jpg" alt="">
+                            <span class="ak-gallery-date">27 જૂન 2026</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Bottom 4 Photos -->
+            <div class="row g-4 mt-1">
+
+                <div class="col-lg-3 col-md-6">
+                    <a href="#" class="ak-gallery-card ak-gallery-small">
+                        <img src="image/ai.png" alt="">
+                        <span class="ak-gallery-date">26 જૂન 2026</span>
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <a href="#" class="ak-gallery-card ak-gallery-small">
+                        <img src="image/match.webp" alt="">
+                        <span class="ak-gallery-date">25 જૂન 2026</span>
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <a href="#" class="ak-gallery-card ak-gallery-small">
+                        <img src="image/social.jpg" alt="">
+                        <span class="ak-gallery-date">24 જૂન 2026</span>
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <a href="#" class="ak-gallery-card ak-gallery-small">
+                        <img src="image/aisa.jpg" alt="">
+                        <span class="ak-gallery-date">23 જૂન 2026</span>
+                    </a>
                 </div>
 
             </div>
@@ -1875,16 +3629,27 @@
     </section>
 
     <!-- જન્મદિવસ શુભેચ્છા -->
-    <section class="bg-white py-5 border-top">
+    <!-- જન્મદિવસ શુભેચ્છા -->
+    <section class="bg-white py-5 ak-birthday-section">
         <div class="content-box">
-            <div class="d-flex justify-content-between align-items-center border-bottom border-2 pb-2 mb-4"
-                style="border-color: #eab308 !important;">
-                <h2 class="fw-black text-uppercase m-0" style="font-size: 1.5rem; color: #eab308;">જન્મદિવસ શુભેચ્છા
-                </h2>
-                <a href="#" class="text-decoration-none fw-bold text-secondary small">બધા જુઓ <i
-                        class="fas fa-arrow-right"></i></a>
+
+            <!-- Header -->
+            <div class="ak-birthday-title-block">
+                <div class="d-flex justify-content-between align-items-center ak-birthday-title-row">
+                    <h2 class="fw-black text-uppercase m-0" style="font-size: 1.5rem; color: #eab308;">
+                        જન્મદિવસ શુભેચ્છા
+                    </h2>
+
+                    <a href="#" class="text-decoration-none fw-bold text-secondary small">
+                        બધા જુઓ <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="ak-birthday-double-dot-line"></div>
             </div>
-            <div class="d-flex overflow-auto hide-scroll gap-3 pb-2">
+
+            <div class="d-flex overflow-auto hide-scroll gap-3 pb-2 ak-birthday-list">
+
                 <div class="flex-shrink-0 text-center">
                     <div class="img-placeholder rounded-circle mx-auto mb-2" style="width: 120px; height: 120px;">
                         <img src="image/modi.webp" alt="" class="img-fluid w-100 h-100" style="border-radius: 100%;">
@@ -1892,6 +3657,7 @@
                     <h5 class="fw-bold mb-0" style="font-size: 0.95rem;">નરેન્દ્ર મોદી</h5>
                     <span class="text-secondary small">PM</span>
                 </div>
+
                 <div class="flex-shrink-0 text-center">
                     <div class="img-placeholder rounded-circle mx-auto mb-2" style="width: 120px; height: 120px;">
                         <img src="image/sachin.webp" alt="" class="img-fluid w-100 h-100" style="border-radius: 100%;">
@@ -1899,6 +3665,7 @@
                     <h5 class="fw-bold mb-0" style="font-size: 0.95rem;">સચિન તેંડુલકર</h5>
                     <span class="text-secondary small">ક્રિકેટર</span>
                 </div>
+
                 <div class="flex-shrink-0 text-center">
                     <div class="img-placeholder rounded-circle mx-auto mb-2" style="width: 120px; height: 120px;">
                         <img src="image/amitabh.webp" alt="" class="img-fluid w-100 h-100" style="border-radius: 100%;">
@@ -1906,6 +3673,7 @@
                     <h5 class="fw-bold mb-0" style="font-size: 0.95rem;">અમિતાભ બચ્ચન</h5>
                     <span class="text-secondary small">અભિનેતા</span>
                 </div>
+
                 <div class="flex-shrink-0 text-center">
                     <div class="img-placeholder rounded-circle mx-auto mb-2" style="width: 120px; height: 120px;">
                         <img src="image/madhuri.jpg" alt="" class="img-fluid w-100 h-100" style="border-radius: 100%;">
@@ -1913,6 +3681,7 @@
                     <h5 class="fw-bold mb-0" style="font-size: 0.95rem;">માધુરી દીક્ષિત</h5>
                     <span class="text-secondary small">અભિનેત્રી</span>
                 </div>
+
                 <div class="flex-shrink-0 text-center">
                     <div class="img-placeholder rounded-circle mx-auto mb-2" style="width: 120px; height: 120px;">
                         <img src="image/rashi.jpg" alt="" class="img-fluid w-100 h-100" style="border-radius: 100%;">
@@ -1920,66 +3689,25 @@
                     <h5 class="fw-bold mb-0" style="font-size: 0.95rem;">રાશિ ખન્ના</h5>
                     <span class="text-secondary small">અભિનેત્રી</span>
                 </div>
+
             </div>
+
         </div>
     </section>
 
-    <!-- <section class="py-5" style="background-color: #f8fafc;">
-        <div class="content-box">
-            <h2 class="fw-black text-center mb-5 text-uppercase" style="font-size: 1.5rem; color: #1e293b;">અકિલા ન્યૂઝ - રંગ પ્લેટ</h2>
-            <div class="d-flex flex-wrap justify-content-center gap-4">
-                <div class="text-center">
-                    <div class="color-swatch mb-2" style="background-color: #b91c1c;">#b91c1c</div>
-                    <span class="fw-semibold small">Primary Red</span>
-                </div>
-                <div class="text-center">
-                    <div class="color-swatch mb-2" style="background-color: #000000;">#000000</div>
-                    <span class="fw-semibold small">Ticker Black</span>
-                </div>
-                <div class="text-center">
-                    <div class="color-swatch mb-2" style="background-color: #1f2937;">#1f2937</div>
-                    <span class="fw-semibold small">Dark Gray</span>
-                </div>
-                <div class="text-center">
-                    <div class="color-swatch mb-2" style="background-color: #2563eb;">#2563eb</div>
-                    <span class="fw-semibold small">Primary Blue</span>
-                </div>
-                <div class="text-center">
-                    <div class="color-swatch mb-2" style="background-color: #ea580c;">#ea580c</div>
-                    <span class="fw-semibold small">Rajkot Orange</span>
-                </div>
-                <div class="text-center">
-                    <div class="color-swatch mb-2" style="background-color: #16a34a;">#16a34a</div>
-                    <span class="fw-semibold small">Saurashtra Green</span>
-                </div>
-                <div class="text-center">
-                    <div class="color-swatch mb-2" style="background-color: #4338ca;">#4338ca</div>
-                    <span class="fw-semibold small">Desh Videsh Indigo</span>
-                </div>
-                <div class="text-center">
-                    <div class="color-swatch mb-2" style="background-color: #db2777;">#db2777</div>
-                    <span class="fw-semibold small">Film Pink</span>
-                </div>
-                <div class="text-center">
-                    <div class="color-swatch mb-2" style="background-color: #eab308; color: #000;">#eab308</div>
-                    <span class="fw-semibold small">Birthday Yellow</span>
-                </div>
-                <div class="text-center">
-                    <div class="color-swatch mb-2" style="background-color: #64748b;">#64748b</div>
-                    <span class="fw-semibold small">Text Gray</span>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
     <!-- Footer -->
-    <footer class="ak-footer bg-dark text-white pt-5 pb-4">
-        <div class="content-box">
+    <footer class="ak-footer text-white">
+        <div class="ak-footer-full">
+
             <div class="row g-4 mb-4">
                 <div class="col-md-3">
                     <h4 class="fw-bold mb-3 text-uppercase">અકિલા ન્યૂઝ</h4>
-                    <p class="small text-secondary">તમને ભારત અને વિશ્વમાંથી તાજા બ્રેકિંગ સમાચાર, ટોપ સ્ટોરીઝ અને
-                        ઊંડાણપૂર્વકનું વિશ્લેષણ પહોંચાડવા.</p>
+
+                    <p class="small text-secondary">
+                        તમને ભારત અને વિશ્વમાંથી તાજા બ્રેકિંગ સમાચાર, ટોપ સ્ટોરીઝ અને ઊંડાણપૂર્વકનું
+                        વિશ્લેષણ પહોંચાડવા.
+                    </p>
+
                     <div class="d-flex gap-2 mt-3">
                         <a href="#" class="text-white"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
@@ -1987,40 +3715,67 @@
                         <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
+
                 <div class="col-md-3">
                     <h5 class="fw-bold mb-3 text-uppercase small">વિભાગો</h5>
+
                     <ul class="list-unstyled small">
-                        <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">રાજકોટ</a></li>
-                        <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">સૌરાષ્ટ્ર કચ્છ</a></li>
-                        <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">દેશ વિદેશ</a></li>
-                        <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">સ્પોર્ટ્સ</a></li>
-                        <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">ફિલ્મ જગત</a></li>
+                        <li class="mb-2">
+                            <a href="#" class="text-decoration-none text-secondary">રાજકોટ</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="text-decoration-none text-secondary">સૌરાષ્ટ્ર કચ્છ</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="text-decoration-none text-secondary">દેશ વિદેશ</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="text-decoration-none text-secondary">સ્પોર્ટ્સ</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="text-decoration-none text-secondary">ફિલ્મ જગત</a>
+                        </li>
                     </ul>
                 </div>
+
                 <div class="col-md-3">
                     <h5 class="fw-bold mb-3 text-uppercase small">કંપની</h5>
+
                     <ul class="list-unstyled small">
-                        <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">અમારા વિશે</a></li>
-                        <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">નિયમો</a></li>
-                        <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">ગોપનીયતા નીતિ</a></li>
-                        <li class="mb-2"><a href="#" class="text-decoration-none text-secondary">સંપર્ક કરો</a></li>
+                        <li class="mb-2">
+                            <a href="#" class="text-decoration-none text-secondary">અમારા વિશે</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="text-decoration-none text-secondary">નિયમો</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="text-decoration-none text-secondary">ગોપનીયતા નીતિ</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="text-decoration-none text-secondary">સંપર્ક કરો</a>
+                        </li>
                     </ul>
                 </div>
+
                 <div class="col-md-3">
                     <h5 class="fw-bold mb-3 text-uppercase small">એપ્સ ડાઉનલોડ કરો</h5>
+
                     <div class="d-flex flex-column gap-2">
-                        <a href="#"
-                            class="text-decoration-none border border-secondary rounded p-2 text-center small">Google
-                            Play</a>
-                        <a href="#"
-                            class="text-decoration-none border border-secondary rounded p-2 text-center small">App
-                            Store</a>
+                        <a href="#" class="text-decoration-none border border-secondary rounded p-2 text-center small">
+                            Google Play
+                        </a>
+
+                        <a href="#" class="text-decoration-none border border-secondary rounded p-2 text-center small">
+                            App Store
+                        </a>
                     </div>
                 </div>
             </div>
+
             <div class="border-top border-secondary pt-3 text-center small text-secondary">
                 <p class="mb-0">&copy; 2026 અકિલા ન્યૂઝ.</p>
             </div>
+
         </div>
     </footer>
 
